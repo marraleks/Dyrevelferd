@@ -13,6 +13,17 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-148516562-1');
+
+        let getOutboundLink = function (url) {
+            gtag('event', 'click', {
+                'event_category': 'dyrevern-no',
+                'transport_type': 'beacon',
+                'event_callback': function() {
+                    window.location = 'http://www.dyrevern.no/stott_oss';
+                }
+            });
+        }
+
     </script>
 
     <meta charset="UTF-8">
@@ -33,6 +44,9 @@
         <h1>Jeg er den eneste h1 på siden og inneholder sidens budskap</h1>
         <p>Jeg er en brødtekst på siden og jeg inneholder viktige keywords, men ikke for mange</p>
         <p>Prøver meg</p>
+        <a onclick="getOutboundLink(); return false;">
+            <img src="./cat.jpg" title="Fin katt" alt="Dette er en fin kat" width="600px">
+        </a>
     </main>
 </body>
 

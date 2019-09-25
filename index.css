@@ -9,5 +9,8 @@ main {
   place-items: center;
   height: 100vh;
 }
+main a {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=index.css.map */
