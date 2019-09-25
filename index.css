@@ -4,4 +4,10 @@ html, body {
   box-sizing: border-box;
 }
 
+main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
 /*# sourceMappingURL=index.css.map */
