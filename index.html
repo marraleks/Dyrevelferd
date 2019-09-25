@@ -19,7 +19,7 @@
                 'event_category': 'dyrevern-no',
                 'transport_type': 'beacon',
                 'event_callback': function() {
-                    window.location = 'http://www.dyrevern.no/stott_oss';
+                    window.location = url;
                 }
             });
         }
@@ -44,7 +44,7 @@
         <h1>Jeg er den eneste h1 på siden og inneholder sidens budskap</h1>
         <p>Jeg er en brødtekst på siden og jeg inneholder viktige keywords, men ikke for mange</p>
         <p>Prøver meg</p>
-        <a onclick="getOutboundLink(); return false;">
+        <a onclick="getOutboundLink('http://www.dyrevern.no/stott_oss');return false;">
             <img src="./cat.jpg" title="Fin katt" alt="Dette er en fin kat" width="600px">
         </a>
     </main>
