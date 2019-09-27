@@ -9,7 +9,7 @@ main {
   place-items: center;
   height: 100vh;
 }
-main a {
+main #dyrevern {
   cursor: pointer;
 }
 
