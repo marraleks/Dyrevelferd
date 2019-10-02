@@ -56,6 +56,20 @@ main{
 }
 #call-to-action{
     background-color: #D03D47;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F4F4F4;
+    text-align: center;
+    h3 {
+        font-family: $default-header-font;
+        font-size: 4rem;
+    }
+    #quote-to-action{
+        font-family: $default-text-font;
+        font-weight: 300;
+    }
 }
 
 
