@@ -1,17 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Oswald:300,400&display=swap');
 
-html, body{
+$default-header-font: 'Amatic SC', cursive;
+$default-text-font: 'Oswald', sans-serif; 
+
+* {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+
 main{
-    display: grid;
-    place-items: center;
+    scroll-snap-type: y mandatory;
+    overflow: auto;
     height: 100vh;
-    #dyrevern {
-        cursor: pointer;
+    width: 100%;
+    scroll-behavior: smooth;
+    section {
+        scroll-snap-align: start;
     }
 }
 
@@ -19,25 +24,59 @@ main{
     height: 100vh;
     width: 100vw;
     background-color: #004CA5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+
+    h2 {
+        font-family: $default-header-font;
+        color: #2BAFF4;
+        font-size: 6rem;
+        font-weight: 700;
+        justify-self: center;
+    }
+    a {
+        font-family: $default-header-font;
+        font-size: 8rem;
+        color: #2BAFF4;
+        transform: rotate(90deg);
+        text-decoration: none;
+    }
 }
 
 #katten{
     height: 100vh;
     width: 100vw;
     background-color: #CA0064;
+    scroll-snap-align: start;
 }
 #hunden{
     height: 100vh;
     width: 100vw;
     background-color: #FFCB2B;
+    scroll-snap-align: start;
 }
 #tvillingene{
     height: 100vh;
     width: 100vw;
     background-color: #D03D47;
+    scroll-snap-align: start;
 }
 #call-to-action{
     height: 100vh;
     width: 100vw;
     background-color: #D03D47;
+    scroll-snap-align: start;
 }
+
+
+// main{
+//     display: grid;
+//     place-items: center;
+//     height: 100vh;
+//     #dyrevern {
+//         cursor: pointer;
+//     }
+// }
