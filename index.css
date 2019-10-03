@@ -40,31 +40,6 @@ main section {
   text-decoration: none;
 }
 
-.blinking {
-  animation: blinkingText 1.5s infinite;
-  font-family: "Amatic SC", cursive;
-  color: #2BAFF4;
-  font-size: 6rem;
-  font-weight: 700;
-}
-
-@keyframes blinkingText {
-  0% {
-    color: #2BAFF4;
-  }
-  49% {
-    color: transparent;
-  }
-  50% {
-    color: transparent;
-  }
-  99% {
-    color: transparent;
-  }
-  100% {
-    color: #2BAFF4;
-  }
-}
 #katten {
   background-color: #CA0064;
 }
@@ -90,9 +65,15 @@ main section {
   font-family: "Amatic SC", cursive;
   font-size: 4rem;
 }
-#call-to-action #quote-to-action {
+#call-to-action p {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
+}
+#call-to-action div {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  color: #D03D47;
 }
 
 /*# sourceMappingURL=index.css.map */

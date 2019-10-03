@@ -66,9 +66,15 @@ main{
         font-family: $default-header-font;
         font-size: 4rem;
     }
-    #quote-to-action{
+    p {
         font-family: $default-text-font;
         font-weight: 300;
+    }
+    div {
+        width: 100px;
+        height: 50px;
+        background-color: white;
+        color:  #D03D47;
     }
 }
 
