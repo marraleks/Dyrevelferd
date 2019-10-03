@@ -54,14 +54,69 @@ main{
     font-size: $default-quote-size;
 }
 
+.lines {
+    width: 5px;
+    height: 1px;
+    margin: 10px;
+}
+
+.kampanjeTittel {
+    font-family: $default-text-font;
+    font-size: 1.2rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 #katten{
     background-color: #CA0064;
+    display: flex;
+    align-items: center;
+    position: relative;
+     
+    .kampanjeTittel {
+        color: #FF2290;
+        .lines {
+            background-color: #FF2290;
+        }
+    }
+    img {
+        height: 90vh;
+        margin-left: 2%;
+        align-self: flex-end;
+        
+    }
+    h4 {
+        margin-left: -10%;
+    }
 }
 #hunden{
     background-color: #FFCB2B;
-}
+    display: flex;
+    align-items: center;
+    position: relative;
+    .kampanjeTittel {
+        color: #FFF580;
+        .lines {
+            background-color: #FFF580;
+        }
+    }
+   }
 #tvillingene{
     background-color: #D03D47;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .kampanjeTittel {
+        color: #F7555F;
+        .lines {
+            background-color: #F7555F;
+        }
+    }
 }
 #call-to-action{
     background-color: #D03D47;
