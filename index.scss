@@ -117,9 +117,29 @@ main{
 }
 #tvillingene{
     background-color: #D03D47;
-    display: flex;
-    align-items: center;
     position: relative;
+    img {
+        position: absolute;
+        height: 60%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+       
+    }
+    h4 {
+        position: absolute;
+        z-index: 2;
+    }
+        #pelle {
+            top: 10%;
+            left: 10%;
+            
+        }
+        #petter {
+            bottom: 10%;
+            right: 10%;
+        }
+    
     .kampanjeTittel {
         color: #F7555F;
         .lines {

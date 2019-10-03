@@ -110,9 +110,26 @@ main section {
 
 #tvillingene {
   background-color: #D03D47;
-  display: flex;
-  align-items: center;
   position: relative;
+}
+#tvillingene img {
+  position: absolute;
+  height: 60%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#tvillingene h4 {
+  position: absolute;
+  z-index: 2;
+}
+#tvillingene #pelle {
+  top: 10%;
+  left: 10%;
+}
+#tvillingene #petter {
+  bottom: 10%;
+  right: 10%;
 }
 #tvillingene .kampanjeTittel {
   color: #F7555F;
