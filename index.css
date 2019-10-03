@@ -25,7 +25,7 @@ main section {
   align-items: center;
   justify-content: center;
 }
-#landingside h2 {
+#landingside #typetext {
   font-family: "Amatic SC", cursive;
   color: #2BAFF4;
   font-size: 6rem;
