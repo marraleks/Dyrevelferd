@@ -41,9 +41,26 @@ main{
         font-size: 8rem;
         color: #2BAFF4;
         transform: rotate(90deg);
-        text-decoration: none;
+        text-decoration: none;     
     }
 }
+
+.blinking{
+    animation:blinkingText 1.5s infinite;
+    font-family: $default-header-font;
+    color: #2BAFF4;
+    font-size: 6rem;
+    font-weight: 700;
+}
+@keyframes blinkingText{
+    0%{		color: #2BAFF4;	}
+    49%{	color: transparent;	}
+    50%{	color: transparent;	}
+    99%{	color:transparent;	}
+    100%{	color: #2BAFF4;	}
+}
+
+
 
 #katten{
     background-color: #CA0064;

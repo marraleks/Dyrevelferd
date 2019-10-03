@@ -1,6 +1,6 @@
-var i = 0;
-var txt = 'Når jeg blir stor'; /* The text */
-var speed = 100; /* The speed/duration of the effect in milliseconds */
+let i = 0;
+let txt = 'Når jeg blir stor'; /* The text */
+let speed = 100; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
   if (i < txt.length) {
