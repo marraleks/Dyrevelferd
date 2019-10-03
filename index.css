@@ -92,6 +92,14 @@ main section {
   display: flex;
   align-items: center;
   position: relative;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+#hunden h4 {
+  align-self: center;
+}
+#hunden img {
+  height: 100vh;
 }
 #hunden .kampanjeTittel {
   color: #FFF580;

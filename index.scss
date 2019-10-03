@@ -99,13 +99,22 @@ main{
     display: flex;
     align-items: center;
     position: relative;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    h4{
+        align-self: center;
+    }
+    img{
+        height: 100vh;
+    }
+
     .kampanjeTittel {
         color: #FFF580;
         .lines {
             background-color: #FFF580;
         }
     }
-   }
+}
 #tvillingene{
     background-color: #D03D47;
     display: flex;
