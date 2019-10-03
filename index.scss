@@ -65,16 +65,34 @@ main{
     h3 {
         font-family: $default-header-font;
         font-size: 4rem;
+        margin: 30px;
     }
     p {
         font-family: $default-text-font;
         font-weight: 300;
+        font-size: 1.3rem;
     }
     div {
-        width: 100px;
-        height: 50px;
+        width: 250px;
+        height: 75px;
         background-color: white;
+        margin: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 75px;
+        box-shadow: -1px 7px 1px rgba(68, 68, 68, 0.6);
+        cursor: pointer;
+        p {
         color:  #D03D47;
+        font-family: $default-header-font;
+        font-size: 2rem;
+        }
+
+    }
+    div:active {
+        box-shadow: -1px 4px 1px rgba(68, 68, 68, 0.6);
+        transform: translateY(4px);
     }
 }
 
