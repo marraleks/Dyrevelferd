@@ -2,6 +2,7 @@
 
 $default-header-font: 'Amatic SC', cursive;
 $default-text-font: 'Oswald', sans-serif; 
+$default-quote-size: 5rem;
 
 * {
 margin: 0;
@@ -46,6 +47,13 @@ main{
     }
 }
 
+.quote {
+    color: white;
+    font-family: $default-header-font;
+    font-weight: 300;
+    font-size: $default-quote-size;
+}
+
 #katten{
     background-color: #CA0064;
 }
@@ -65,7 +73,7 @@ main{
     text-align: center;
     h3 {
         font-family: $default-header-font;
-        font-size: 4rem;
+        font-size: 5rem;
         margin: 30px;
     }
     p {
