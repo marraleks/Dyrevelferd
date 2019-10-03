@@ -19,25 +19,26 @@ main section {
 }
 
 #landingside {
-  background-color: #004CA5;
+  background-color: #D03D47;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 #landingside #typetext {
   font-family: "Amatic SC", cursive;
-  color: #2BAFF4;
+  color: #F4F4F4;
   font-size: 6rem;
   font-weight: 700;
-  justify-self: center;
+  margin-top: 200px;
 }
 #landingside a {
   font-family: "Amatic SC", cursive;
-  font-size: 8rem;
-  color: #2BAFF4;
+  font-size: 7rem;
+  color: #F4F4F4;
   transform: rotate(90deg);
   text-decoration: none;
+  margin-top: 100px;
 }
 
 #katten {

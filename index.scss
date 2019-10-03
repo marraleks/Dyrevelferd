@@ -23,25 +23,26 @@ main{
 }
 
 #landingside{
-    background-color: #004CA5;
+    background-color: #D03D47;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
     #typetext {
         font-family: $default-header-font;
-        color: #2BAFF4;
+        color: #F4F4F4;
         font-size: 6rem;
         font-weight: 700;
-        justify-self: center;
+        margin-top: 200px;
     }
     a {
         font-family: $default-header-font;
-        font-size: 8rem;
-        color: #2BAFF4;
+        font-size: 7rem;
+        color: #F4F4F4;
         transform: rotate(90deg);
-        text-decoration: none;     
+        text-decoration: none;   
+        margin-top: 100px;  
     }
 }
 
