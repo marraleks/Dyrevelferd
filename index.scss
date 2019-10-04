@@ -4,6 +4,16 @@ $default-header-font: 'Amatic SC', cursive;
 $default-text-font: 'Oswald', sans-serif; 
 $default-quote-size: 5rem;
 
+ /* @mixin lets you create styles components that you can include in elements by
+ writing @include: nameOf @ mixin
+ @mixin absCenterPosition() {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform:translate(-50% -50%);
+ }
+ */
+
 * {
 margin: 0;
 padding: 0;
