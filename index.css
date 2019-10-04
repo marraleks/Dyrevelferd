@@ -18,6 +18,10 @@ main section {
   width: 100vw;
 }
 
+.arrow {
+  text-shadow: 4px 3px 1px rgba(68, 68, 68, 0.6);
+}
+
 #landingside {
   background-color: #D03D47;
   display: flex;
@@ -71,7 +75,6 @@ main section {
   display: flex;
   align-items: center;
   position: relative;
-  overflow: hidden;
 }
 #katten .kampanjeTittel {
   color: #FF2290;
@@ -91,7 +94,6 @@ main section {
 #hunden {
   background-color: #FFCB2B;
   position: relative;
-  overflow: hidden;
 }
 #hunden h4 {
   position: absolute;
@@ -117,7 +119,6 @@ main section {
 #tvillingene {
   background-color: #D03D47;
   position: relative;
-  overflow: hidden;
 }
 #tvillingene img {
   height: 60%;
