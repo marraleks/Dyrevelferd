@@ -109,18 +109,18 @@ main section {
   background-color: #FFCB2B;
   position: relative;
 }
-#hunden h4 {
-  position: absolute;
-  z-index: 3;
-  left: 10%;
-  top: 50%;
-  transform: translateY(-50%);
-}
 #hunden img {
   position: absolute;
+  bottom: 0;
+  right: 0;
   height: 100vh;
-  right: 0%;
-  bottom: 0%;
+}
+#hunden h4 {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  z-index: 3;
 }
 #hunden .kampanjeTittel {
   color: #FFF580;

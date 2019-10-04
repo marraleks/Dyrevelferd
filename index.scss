@@ -113,24 +113,24 @@ main{
         }
     }
 }
+
 #hunden{
     background-color: #FFCB2B;
     position: relative;
-    // overflow: hidden;
-    h4{
-        position: absolute;
-        z-index: 3;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
-    }
+
     img{
         position: absolute;
+        bottom: 0;
+        right: 0;
         height: 100vh;
-        right: 0%;
-        bottom: 0%;
     }
-
+    h4{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+        z-index: 3;
+    }
     .kampanjeTittel {
         color: #FFF580;
         z-index: 10;
@@ -139,6 +139,8 @@ main{
         }
     }
 }
+
+
 #tvillingene{
     background-color: #D03D47;
     position: relative;
