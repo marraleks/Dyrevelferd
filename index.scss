@@ -61,6 +61,7 @@ main {
     transform: rotate(90deg);
     text-decoration: none;
     margin-top: 50px;
+    user-select: none;
   }
 }
 
@@ -302,6 +303,8 @@ main {
     border-radius: 75px;
     box-shadow: -1px 7px 1px rgba(68, 68, 68, 0.6);
     cursor: pointer;
+    user-select: none;
+    
     p {
       color: #d03d47;
       font-family: $default-header-font;
@@ -355,5 +358,28 @@ h4 {
     #petter {
       font-size: 2rem;
     }
+  }
+  #call-to-action{
+    h3 {
+      font-family: $default-header-font;
+      font-size: 3rem;
+      margin: 30px;
+    }
+      p {
+        font-family: $default-text-font;
+        font-weight: 300;
+        font-size: 1rem;
+      }
+      div {
+        width: 150px;
+        height: 50px;
+        p {
+          color: #d03d47;
+          font-family: $default-header-font;
+          font-size: 1.3rem;
+          font-weight: 400;
+        }
+      }
+    
   }
 }
