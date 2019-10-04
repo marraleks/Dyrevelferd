@@ -300,13 +300,12 @@ main section {
 }
 
 @media (max-width: 700px) {
-<<<<<<< HEAD
   h4 {
     font-size: 2.3rem;
-=======
+  }
+
   #landingside #typetext {
     font-size: 4rem;
->>>>>>> 69e53e7cbc9777c1168637be4cdabbfaca5da5f0
   }
 
   #katten {
