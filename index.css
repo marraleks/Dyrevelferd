@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Oswald:300,400&display=swap");
 /* @mixin lets you create styles components that you can include in elements by
-writing @include: nameOf @ mixin
-@mixin absCenterPosition() {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50% -50%);
-}
-*/
+ writing @include: nameOf @ mixin
+ @mixin absCenterPosition() {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform:translate(-50% -50%);
+ }
+ */
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +32,7 @@ main section {
 }
 
 #landingside {
-  background-color: #D03D47;
+  background-color: #d03d47;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +40,7 @@ main section {
 }
 #landingside #typetext {
   font-family: "Amatic SC", cursive;
-  color: #F4F4F4;
+  color: #f4f4f4;
   font-size: 6rem;
   font-weight: 700;
   margin-top: 200px;
@@ -48,7 +48,7 @@ main section {
 #landingside a {
   font-family: "Amatic SC", cursive;
   font-size: 7rem;
-  color: #F4F4F4;
+  color: #f4f4f4;
   transform: rotate(90deg);
   text-decoration: none;
   margin-top: 100px;
@@ -80,10 +80,15 @@ main section {
 }
 
 #katten {
-  background-color: #CA0064;
+  background-color: #ca0064;
   position: relative;
 }
-#katten .nameTag {
+#katten .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#katten .container .nameTag {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -93,16 +98,16 @@ main section {
   top: 70px;
   left: 270px;
 }
-#katten .nameTag .nameLine {
+#katten .container .nameTag .nameLine {
   height: 100px;
   width: 1px;
   margin: 10px;
   background-color: white;
 }
-#katten .nameTag p {
+#katten .container .nameTag p {
   font-size: 1.3rem;
 }
-#katten img {
+#katten .container img {
   position: absolute;
   height: 95vh;
   top: 50%;
@@ -115,19 +120,24 @@ main section {
   right: 10%;
 }
 #katten .kampanjeTittel {
-  color: #FF2290;
+  color: #ff2290;
   z-index: 10;
 }
 #katten .kampanjeTittel .lines {
-  background-color: #FF2290;
+  background-color: #ff2290;
   z-index: 10;
 }
 
 #hunden {
-  background-color: #FFCB2B;
+  background-color: #ffcb2b;
   position: relative;
 }
-#hunden .nameTag {
+#hunden .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#hunden .container .nameTag {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -137,13 +147,13 @@ main section {
   top: 80px;
   right: 270px;
 }
-#hunden .nameTag .nameLine {
+#hunden .container .nameTag .nameLine {
   height: 100px;
   width: 1px;
   margin: 10px;
   background-color: white;
 }
-#hunden .nameTag p {
+#hunden .container .nameTag p {
   font-size: 1.2rem;
 }
 #hunden img {
@@ -160,15 +170,15 @@ main section {
   z-index: 3;
 }
 #hunden .kampanjeTittel {
-  color: #FFF580;
+  color: #fff580;
   z-index: 10;
 }
 #hunden .kampanjeTittel .lines {
-  background-color: #FFF580;
+  background-color: #fff580;
 }
 
 #tvillingene {
-  background-color: #D03D47;
+  background-color: #d03d47;
   position: relative;
 }
 #tvillingene img {
@@ -192,19 +202,19 @@ main section {
   right: 10%;
 }
 #tvillingene .kampanjeTittel {
-  color: #F7555F;
+  color: #f7555f;
 }
 #tvillingene .kampanjeTittel .lines {
-  background-color: #F7555F;
+  background-color: #f7555f;
 }
 
 #call-to-action {
-  background-color: #D03D47;
+  background-color: #d03d47;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #F4F4F4;
+  color: #f4f4f4;
   text-align: center;
 }
 #call-to-action h3 {
@@ -230,7 +240,7 @@ main section {
   cursor: pointer;
 }
 #call-to-action div p {
-  color: #D03D47;
+  color: #d03d47;
   font-family: "Amatic SC", cursive;
   font-size: 2rem;
   font-weight: 400;

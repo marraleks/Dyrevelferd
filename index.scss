@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Oswald:300,400&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Oswald:300,400&display=swap");
 
-$default-header-font: 'Amatic SC', cursive;
-$default-text-font: 'Oswald', sans-serif; 
+$default-header-font: "Amatic SC", cursive;
+$default-text-font: "Oswald", sans-serif;
 $default-quote-size: 5rem;
 
- /* @mixin lets you create styles components that you can include in elements by
+/* @mixin lets you create styles components that you can include in elements by
  writing @include: nameOf @ mixin
  @mixin absCenterPosition() {
      position: absolute;
@@ -15,247 +15,252 @@ $default-quote-size: 5rem;
  */
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-main{
-    scroll-snap-type: y mandatory;
-    overflow: auto;
+main {
+  scroll-snap-type: y mandatory;
+  overflow: auto;
+  height: 100vh;
+  width: 100%;
+  scroll-behavior: smooth;
+  section {
+    scroll-snap-align: start;
     height: 100vh;
-    width: 100%;
-    scroll-behavior: smooth;
-    section {
-        scroll-snap-align: start;
-        height: 100vh;
-        width: 100vw;
-    }
+    width: 100vw;
+  }
 }
 
 .arrow {
-    text-shadow: 3px 1px 0px rgba(68, 68, 68, 0.6);
+  text-shadow: 3px 1px 0px rgba(68, 68, 68, 0.6);
 }
 
-#landingside{
-    background-color: #D03D47;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+#landingside {
+  background-color: #d03d47;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 
-    #typetext {
-        font-family: $default-header-font;
-        color: #F4F4F4;
-        font-size: 6rem;
-        font-weight: 700;
-        margin-top: 200px;
-    }
-    a {
-        font-family: $default-header-font;
-        font-size: 7rem;
-        color: #F4F4F4;
-        transform: rotate(90deg);
-        text-decoration: none;   
-        margin-top: 100px;  
-    }
+  #typetext {
+    font-family: $default-header-font;
+    color: #f4f4f4;
+    font-size: 6rem;
+    font-weight: 700;
+    margin-top: 200px;
+  }
+  a {
+    font-family: $default-header-font;
+    font-size: 7rem;
+    color: #f4f4f4;
+    transform: rotate(90deg);
+    text-decoration: none;
+    margin-top: 100px;
+  }
 }
 
 .quote {
-    color: white;
-    font-family: $default-header-font;
-    font-weight: 300;
-    font-size: $default-quote-size;
+  color: white;
+  font-family: $default-header-font;
+  font-weight: 300;
+  font-size: $default-quote-size;
 }
 
 .lines {
-    width: 5px;
-    height: 1px;
-    margin: 10px;
+  width: 5px;
+  height: 1px;
+  margin: 10px;
 }
 
 .kampanjeTittel {
-    font-family: $default-text-font;
-    font-size: 1.2rem;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 30px;
-    left: 50%;
-    transform: translate(-50%);
+  font-family: $default-text-font;
+  font-size: 1.2rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
-
-#katten{
-    background-color: #CA0064;
-    position: relative;
-    // overflow: hidden;
+#katten {
+  background-color: #ca0064;
+  position: relative;
+  // overflow: hidden;
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     .nameTag {
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        flex-direction: column;
-        align-items: center;
-        z-index: 1;
-        top: 70px;
-        left: 270px;
-        .nameLine {
-            height: 100px;
-            width: 1px;
-            margin: 10px;
-            background-color: white;
-        }
-        p {
-            font-size: 1.3rem;
-        }
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1;
+      top: 70px;
+      left: 270px;
+      .nameLine {
+        height: 100px;
+        width: 1px;
+        margin: 10px;
+        background-color: white;
+      }
+      p {
+        font-size: 1.3rem;
+      }
     }
     img {
-        position: absolute;
-        height: 95vh;
-        top: 50%;
-        transform: translateY(-50%)
+      position: absolute;
+      height: 95vh;
+      top: 50%;
+      transform: translateY(-50%);
     }
-    h4 {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 10%;
-    }
+  }
 
-    .kampanjeTittel {
-        color: #FF2290;
-        z-index: 10;
-        .lines {
-            background-color: #FF2290;
-            z-index: 10;
-        }
+  h4 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+  }
+
+  .kampanjeTittel {
+    color: #ff2290;
+    z-index: 10;
+    .lines {
+      background-color: #ff2290;
+      z-index: 10;
     }
+  }
 }
 
-#hunden{
-    background-color: #FFCB2B;
-    position: relative;
-    .nameTag {
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        flex-direction: column;
-        align-items: center;
-        z-index: 1;
-        top: 80px;
-        right: 270px;
-        .nameLine {
-            height: 100px;
-            width: 1px;
-            margin: 10px;
-            background-color: white;
-        }
-        p {
-            font-size: 1.2rem;
-        }
-    }
-
-    img{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        height: 100vh;
-    }
-    h4{
-        position: absolute;
-        top: 50%;
-        left: 10%;
-        transform: translateY(-50%);
-        z-index: 3;
-    }
-    .kampanjeTittel {
-        color: #FFF580;
-        z-index: 10;
-        .lines {
-            background-color: #FFF580;
-        }
-    }
-}
-
-
-#tvillingene{
-    background-color: #D03D47;
-    position: relative;
-    // overflow: hidden;
-    img { 
-        height: 60%;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        position: absolute;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-       
-    }
-    h4 {
-        position: absolute;
-        z-index: 2;
-    }
-        #pelle {
-            top: 10%;
-            left: 10%;
-            
-        }
-        #petter {
-            bottom: 10%;
-            right: 10%;
-        }
-    
-    .kampanjeTittel {
-        color: #F7555F;
-        .lines {
-            background-color: #F7555F;
-        }
-    }
-}
-#call-to-action{
-    background-color: #D03D47;
+#hunden {
+  background-color: #ffcb2b;
+  position: relative;
+  .container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    color: #F4F4F4;
-    text-align: center;
-    h3 {
-        font-family: $default-header-font;
-        font-size: 5rem;
-        margin: 30px;
-    }
-    p {
-        font-family: $default-text-font;
-        font-weight: 300;
-        font-size: 1.3rem;
-    }
-    div {
-        width: 250px;
-        height: 75px;
+    flex-direction: column;
+    .nameTag {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1;
+      top: 80px;
+      right: 270px;
+      .nameLine {
+        height: 100px;
+        width: 1px;
+        margin: 10px;
         background-color: white;
-        margin: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 75px;
-        box-shadow: -1px 7px 1px rgba(68, 68, 68, 0.6);
-        cursor: pointer;
-        p {
-        color:  #D03D47;
-        font-family: $default-header-font;
-        font-size: 2rem;
-        font-weight: 400;
-        }
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
 
+  img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+  }
+  h4 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 3;
+  }
+  .kampanjeTittel {
+    color: #fff580;
+    z-index: 10;
+    .lines {
+      background-color: #fff580;
     }
-    div:active {
-        box-shadow: -1px 4px 1px rgba(68, 68, 68, 0.6);
-        transform: translateY(4px);
-    }
+  }
 }
 
+#tvillingene {
+  background-color: #d03d47;
+  position: relative;
+  // overflow: hidden;
+  img {
+    height: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  h4 {
+    position: absolute;
+    z-index: 2;
+  }
+  #pelle {
+    top: 10%;
+    left: 10%;
+  }
+  #petter {
+    bottom: 10%;
+    right: 10%;
+  }
+
+  .kampanjeTittel {
+    color: #f7555f;
+    .lines {
+      background-color: #f7555f;
+    }
+  }
+}
+#call-to-action {
+  background-color: #d03d47;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f4f4f4;
+  text-align: center;
+  h3 {
+    font-family: $default-header-font;
+    font-size: 5rem;
+    margin: 30px;
+  }
+  p {
+    font-family: $default-text-font;
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+  div {
+    width: 250px;
+    height: 75px;
+    background-color: white;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 75px;
+    box-shadow: -1px 7px 1px rgba(68, 68, 68, 0.6);
+    cursor: pointer;
+    p {
+      color: #d03d47;
+      font-family: $default-header-font;
+      font-size: 2rem;
+      font-weight: 400;
+    }
+  }
+  div:active {
+    box-shadow: -1px 4px 1px rgba(68, 68, 68, 0.6);
+    transform: translateY(4px);
+  }
+}
 
 // main{
 //     display: grid;
