@@ -86,7 +86,9 @@ main section {
 #katten .container {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
+  max-width: 50%;
 }
 #katten .container .nameTag {
   display: flex;
@@ -96,7 +98,6 @@ main section {
   align-items: center;
   z-index: 1;
   top: 70px;
-  left: 270px;
 }
 #katten .container .nameTag .nameLine {
   height: 100px;
@@ -136,6 +137,7 @@ main section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  max-width: 50%;
 }
 #hunden .container .nameTag {
   display: flex;
@@ -145,7 +147,6 @@ main section {
   align-items: center;
   z-index: 1;
   top: 80px;
-  right: 270px;
 }
 #hunden .container .nameTag .nameLine {
   height: 100px;

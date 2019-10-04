@@ -93,7 +93,9 @@ main {
   .container {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    max-width: 50%;
     .nameTag {
       display: flex;
       justify-content: center;
@@ -102,7 +104,6 @@ main {
       align-items: center;
       z-index: 1;
       top: 70px;
-      left: 270px;
       .nameLine {
         height: 100px;
         width: 1px;
@@ -145,6 +146,7 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    max-width: 50%;
     .nameTag {
       display: flex;
       justify-content: center;
@@ -153,7 +155,6 @@ main {
       align-items: center;
       z-index: 1;
       top: 80px;
-      right: 270px;
       .nameLine {
         height: 100px;
         width: 1px;
