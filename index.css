@@ -113,11 +113,11 @@ main section {
   position: relative;
 }
 #tvillingene img {
-  position: absolute;
   height: 60%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  position: absolute;
 }
 #tvillingene h4 {
   position: absolute;

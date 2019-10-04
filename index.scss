@@ -118,12 +118,12 @@ main{
 #tvillingene{
     background-color: #D03D47;
     position: relative;
-    img {
-        position: absolute;
+    img { 
         height: 60%;
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
+        position: absolute;
        
     }
     h4 {
