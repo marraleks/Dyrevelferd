@@ -217,6 +217,78 @@ main {
     color: #f7555f;
     .lines {
       background-color: #f7555f;
+#tvillingene{
+    background-color: #D03D47;
+    position: relative;
+    // overflow: hidden;
+    
+    .nameTag-pelle {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        flex-direction: column-reverse;
+        align-items: center;
+        z-index: 1;
+        bottom: 70px;
+        left: 30%;
+        .nameLine {
+            height: 100px;
+            width: 1px;
+            margin: 10px;
+            background-color: white;
+        }
+        p {
+            font-size: 1.3rem;
+        }
+    }
+    .nameTag-petter {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+        top: 70px;
+        right: 35%;
+        .nameLine {
+            height: 100px;
+            width: 1px;
+            margin: 10px;
+            background-color: white;
+        }
+        p {
+            font-size: 1.3rem;
+        }
+    }
+    img { 
+        height: 60%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       
+    }
+    h4 {
+        position: absolute;
+        z-index: 2;
+    }
+        #pelle {
+            top: 10%;
+            left: 10%;
+            font-size: 4.3rem;
+        }
+        #petter {
+            bottom: 10%;
+            right: 10%;
+            font-size: 4.3rem;
+        }
+    
+    .kampanjeTittel {
+        color: #F7555F;
+        .lines {
+            background-color: #F7555F;
+        }
     }
   }
 }

@@ -181,6 +181,44 @@ main section {
   background-color: #d03d47;
   position: relative;
 }
+#tvillingene .nameTag-pelle {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  flex-direction: column-reverse;
+  align-items: center;
+  z-index: 1;
+  bottom: 70px;
+  left: 30%;
+}
+#tvillingene .nameTag-pelle .nameLine {
+  height: 100px;
+  width: 1px;
+  margin: 10px;
+  background-color: white;
+}
+#tvillingene .nameTag-pelle p {
+  font-size: 1.3rem;
+}
+#tvillingene .nameTag-petter {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  top: 70px;
+  right: 35%;
+}
+#tvillingene .nameTag-petter .nameLine {
+  height: 100px;
+  width: 1px;
+  margin: 10px;
+  background-color: white;
+}
+#tvillingene .nameTag-petter p {
+  font-size: 1.3rem;
+}
 #tvillingene img {
   height: 60%;
   left: 50%;
@@ -196,10 +234,12 @@ main section {
 #tvillingene #pelle {
   top: 10%;
   left: 10%;
+  font-size: 4.3rem;
 }
 #tvillingene #petter {
   bottom: 10%;
   right: 10%;
+  font-size: 4.3rem;
 }
 #tvillingene .kampanjeTittel {
   color: #f7555f;
