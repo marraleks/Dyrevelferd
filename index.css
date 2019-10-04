@@ -19,7 +19,7 @@ main section {
 }
 
 .arrow {
-  text-shadow: 4px 3px 1px rgba(68, 68, 68, 0.6);
+  text-shadow: 3px 1px 0px rgba(68, 68, 68, 0.6);
 }
 
 #landingside {
@@ -187,6 +187,7 @@ main section {
   color: #D03D47;
   font-family: "Amatic SC", cursive;
   font-size: 2rem;
+  font-weight: 400;
 }
 #call-to-action div:active {
   box-shadow: -1px 4px 1px rgba(68, 68, 68, 0.6);

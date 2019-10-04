@@ -24,7 +24,7 @@ main{
 }
 
 .arrow {
-    text-shadow: 4px 3px 1px rgba(68, 68, 68, 0.6);
+    text-shadow: 3px 1px 0px rgba(68, 68, 68, 0.6);
 }
 
 #landingside{
@@ -196,6 +196,7 @@ main{
         color:  #D03D47;
         font-family: $default-header-font;
         font-size: 2rem;
+        font-weight: 400;
         }
 
     }
