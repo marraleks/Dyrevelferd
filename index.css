@@ -297,6 +297,10 @@ main section {
 }
 
 @media (max-width: 700px) {
+  h4 {
+    font-size: 2.3rem;
+  }
+
   #katten {
     overflow: hidden;
   }
@@ -314,6 +318,16 @@ main section {
 
   #tvillingene {
     overflow: hidden;
+  }
+  #tvillingene img {
+    width: 100vw;
+    height: auto;
+  }
+  #tvillingene #pelle {
+    font-size: 2rem;
+  }
+  #tvillingene #petter {
+    font-size: 2rem;
   }
 }
 
