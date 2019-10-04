@@ -50,7 +50,7 @@ main {
     font-size: 6rem;
     font-weight: 700;
     margin-top: 150px;
-    text-align: center;
+    text-align: start;
     margin-right: 100px;
     margin-left: 100px;
   }
@@ -72,11 +72,6 @@ main {
   font-size: $default-quote-size;
 }
 
-.lines {
-  width: 5px;
-  height: 1px;
-  margin: 10px;
-}
 
 .kampanjeTittel {
   font-family: $default-text-font;
@@ -204,53 +199,58 @@ main {
 #tvillingene {
   background-color: #d03d47;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   // overflow: hidden;
 
-  .nameTag-pelle {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    flex-direction: column-reverse;
-    align-items: center;
-    z-index: 1;
-    bottom: 70px;
-    left: 30%;
-    .nameLine {
-      height: 100px;
-      width: 1px;
-      margin: 10px;
-      background-color: white;
+    .nameTag-pelle {
+      display: flex;
+      position: absolute;
+      flex-direction: column-reverse;
+      align-items: center;
+      z-index: 1;
+      bottom: 10%;
+      left: 43%;
+      transform: translate(-300%);
+      .nameLine {
+        height: 100px;
+        width: 1px;
+        margin: 10px;
+        background-color: white;
+      }
+      p {
+        font-size: 1.3rem;
+      }
     }
-    p {
-      font-size: 1.3rem;
-    }
-  }
-  .nameTag-petter {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
-    top: 70px;
-    right: 35%;
-    .nameLine {
-      height: 100px;
-      width: 1px;
-      margin: 10px;
-      background-color: white;
-    }
-    p {
-      font-size: 1.3rem;
-    }
+    .nameTag-petter {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1;
+      top: 18%;
+      right: 40%;
+      transform: translate(100%, 10%);
+      .nameLine {
+        height: 100px;
+        width: 1px;
+        margin: 10px;
+        background-color: white;
+      }
+      p {
+        font-size: 1.3rem;
+      }
   }
   img {
-    height: 60%;
+    height: 70%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
   }
+  
+  
   h4 {
     position: absolute;
     z-index: 2;
@@ -320,18 +320,29 @@ main {
 
 @media (max-width: 700px) {
   
-h4 {
-  font-size: 2.3rem;
-}
   #landingside{
   #typetext {
-    font-size: 4rem;
+    font-size: 5rem;
+    padding: 20px;
   }
 }
 
   #katten{
     overflow: hidden;
+    .container {
+      position: relative;
+      margin-top: 60px;
+      img{
+        height: 80vh;
+      }
+    }
+    h4{
+      top: 90%;
+      font-size: 2.6rem;
+    }
   }
+
+
   #hunden {
     .container {
       .nameTag {
@@ -343,22 +354,37 @@ h4 {
     }
     h4 {
       top: 20%;
-      font-size: 2.3rem;
+      font-size: 2.6rem;
     }
   }
   #tvillingene{
     overflow: hidden;
+    .nameTag-petter{
+      right: 30%;
+      top: 20%;
+    }
+    .nameTag-pelle{
+      bottom: 15%;
+      left: 5%;
+      transform: translate(100%);
+    }
     img {
-      width: 100vw;
+      width: 120vw;
       height: auto;
     }
     #pelle {
-      font-size: 2rem;
+      font-size: 2.6rem;
+      top: 25%;
+      left: 2%;
     }
     #petter {
-      font-size: 2rem;
+      font-size: 3.5rem;
+      bottom: 20%;
+      right: 3%;
     }
   }
+
+
   #call-to-action{
     h3 {
       font-family: $default-header-font;

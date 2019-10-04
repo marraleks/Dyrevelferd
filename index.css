@@ -44,7 +44,7 @@ main section {
   font-size: 6rem;
   font-weight: 700;
   margin-top: 150px;
-  text-align: center;
+  text-align: start;
   margin-right: 100px;
   margin-left: 100px;
 }
@@ -63,12 +63,6 @@ main section {
   font-family: "Amatic SC", cursive;
   font-weight: 300;
   font-size: 5rem;
-}
-
-.lines {
-  width: 5px;
-  height: 1px;
-  margin: 10px;
 }
 
 .kampanjeTittel {
@@ -191,16 +185,19 @@ main section {
 #tvillingene {
   background-color: #d03d47;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #tvillingene .nameTag-pelle {
   display: flex;
-  justify-content: center;
   position: absolute;
   flex-direction: column-reverse;
   align-items: center;
   z-index: 1;
-  bottom: 70px;
-  left: 30%;
+  bottom: 10%;
+  left: 43%;
+  transform: translate(-300%);
 }
 #tvillingene .nameTag-pelle .nameLine {
   height: 100px;
@@ -213,13 +210,13 @@ main section {
 }
 #tvillingene .nameTag-petter {
   display: flex;
-  justify-content: center;
   position: absolute;
   flex-direction: column;
   align-items: center;
   z-index: 1;
-  top: 70px;
-  right: 35%;
+  top: 18%;
+  right: 40%;
+  transform: translate(100%, 10%);
 }
 #tvillingene .nameTag-petter .nameLine {
   height: 100px;
@@ -231,7 +228,7 @@ main section {
   font-size: 1.3rem;
 }
 #tvillingene img {
-  height: 60%;
+  height: 70%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -302,16 +299,24 @@ main section {
 }
 
 @media (max-width: 700px) {
-  h4 {
-    font-size: 2.3rem;
-  }
-
   #landingside #typetext {
-    font-size: 4rem;
+    font-size: 5rem;
+    padding: 20px;
   }
 
   #katten {
     overflow: hidden;
+  }
+  #katten .container {
+    position: relative;
+    margin-top: 60px;
+  }
+  #katten .container img {
+    height: 80vh;
+  }
+  #katten h4 {
+    top: 90%;
+    font-size: 2.6rem;
   }
 
   #hunden .container .nameTag {
@@ -322,21 +327,34 @@ main section {
   }
   #hunden h4 {
     top: 20%;
-    font-size: 2.3rem;
+    font-size: 2.6rem;
   }
 
   #tvillingene {
     overflow: hidden;
   }
+  #tvillingene .nameTag-petter {
+    right: 30%;
+    top: 20%;
+  }
+  #tvillingene .nameTag-pelle {
+    bottom: 15%;
+    left: 5%;
+    transform: translate(100%);
+  }
   #tvillingene img {
-    width: 100vw;
+    width: 120vw;
     height: auto;
   }
   #tvillingene #pelle {
-    font-size: 2rem;
+    font-size: 2.6rem;
+    top: 25%;
+    left: 2%;
   }
   #tvillingene #petter {
-    font-size: 2rem;
+    font-size: 3.5rem;
+    bottom: 20%;
+    right: 3%;
   }
 
   #call-to-action h3 {
