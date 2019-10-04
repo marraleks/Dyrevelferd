@@ -164,14 +164,15 @@ main {
         font-size: 1.2rem;
       }
     }
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 100vh;
+    }
   }
 
-  img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 100vh;
-  }
+  
   h4 {
     position: absolute;
     top: 50%;
@@ -188,35 +189,7 @@ main {
   }
 }
 
-#tvillingene {
-  background-color: #d03d47;
-  position: relative;
-  // overflow: hidden;
-  img {
-    height: 60%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  h4 {
-    position: absolute;
-    z-index: 2;
-  }
-  #pelle {
-    top: 10%;
-    left: 10%;
-  }
-  #petter {
-    bottom: 10%;
-    right: 10%;
-  }
 
-  .kampanjeTittel {
-    color: #f7555f;
-    .lines {
-      background-color: #f7555f;
 #tvillingene{
     background-color: #D03D47;
     position: relative;
@@ -265,9 +238,7 @@ main {
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
-        position: absolute;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-       
+        position: absolute;       
     }
     h4 {
         position: absolute;
@@ -290,8 +261,8 @@ main {
             background-color: #F7555F;
         }
     }
-  }
 }
+
 #call-to-action {
   background-color: #d03d47;
   display: flex;

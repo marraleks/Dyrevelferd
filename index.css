@@ -156,7 +156,7 @@ main section {
 #hunden .container .nameTag p {
   font-size: 1.2rem;
 }
-#hunden img {
+#hunden .container img {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -178,7 +178,7 @@ main section {
 }
 
 #tvillingene {
-  background-color: #d03d47;
+  background-color: #D03D47;
   position: relative;
 }
 #tvillingene .nameTag-pelle {
@@ -225,7 +225,6 @@ main section {
   top: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #tvillingene h4 {
   position: absolute;
@@ -242,10 +241,10 @@ main section {
   font-size: 4.3rem;
 }
 #tvillingene .kampanjeTittel {
-  color: #f7555f;
+  color: #F7555F;
 }
 #tvillingene .kampanjeTittel .lines {
-  background-color: #f7555f;
+  background-color: #F7555F;
 }
 
 #call-to-action {
