@@ -86,30 +86,30 @@ main{
     transform: translate(-50%);
 }
 
-.nameTag {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
-    top: 30px;
-    left: 270px;
-    .nameLine {
-        height: 100px;
-        width: 1px;
-        margin: 10px;
-        background-color: white;
-    }
-    p {
-        font-size: 1.2rem;
-    }
-}
 
 #katten{
     background-color: #CA0064;
     position: relative;
     // overflow: hidden;
+    .nameTag {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+        top: 70px;
+        left: 270px;
+        .nameLine {
+            height: 100px;
+            width: 1px;
+            margin: 10px;
+            background-color: white;
+        }
+        p {
+            font-size: 1.3rem;
+        }
+    }
     img {
         position: absolute;
         height: 95vh;
@@ -136,6 +136,25 @@ main{
 #hunden{
     background-color: #FFCB2B;
     position: relative;
+    .nameTag {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+        top: 80px;
+        right: 270px;
+        .nameLine {
+            height: 100px;
+            width: 1px;
+            margin: 10px;
+            background-color: white;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
 
     img{
         position: absolute;
