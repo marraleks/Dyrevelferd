@@ -89,20 +89,24 @@ main section {
 
 #hunden {
   background-color: #FFCB2B;
-  display: flex;
-  align-items: center;
   position: relative;
-  justify-content: flex-end;
-  flex-wrap: wrap;
 }
 #hunden h4 {
-  align-self: center;
+  position: absolute;
+  z-index: 3;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 #hunden img {
+  position: absolute;
   height: 100vh;
+  right: 0%;
+  bottom: 0%;
 }
 #hunden .kampanjeTittel {
   color: #FFF580;
+  z-index: 10;
 }
 #hunden .kampanjeTittel .lines {
   background-color: #FFF580;
@@ -118,6 +122,7 @@ main section {
   top: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #tvillingene h4 {
   position: absolute;
