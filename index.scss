@@ -88,25 +88,29 @@ main{
 
 #katten{
     background-color: #CA0064;
-    display: flex;
-    align-items: center;
     position: relative;
     // overflow: hidden;
-     
-    .kampanjeTittel {
-        color: #FF2290;
-        .lines {
-            background-color: #FF2290;
-        }
-    }
     img {
-        height: 90vh;
-        margin-left: 2%;
-        align-self: flex-end;
-        
+        position: absolute;
+        height: 95vh;
+        left: 2%;
+        top: 50%;
+        transform: translateY(-50%)
     }
     h4 {
-        margin-left: -3%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10%;
+    }
+
+    .kampanjeTittel {
+        color: #FF2290;
+        z-index: 10;
+        .lines {
+            background-color: #FF2290;
+            z-index: 10;
+        }
     }
 }
 #hunden{
