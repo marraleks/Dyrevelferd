@@ -79,6 +79,26 @@ main section {
   transform: translate(-50%);
 }
 
+.nameTag {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  top: 30px;
+  left: 270px;
+}
+.nameTag .nameLine {
+  height: 100px;
+  width: 1px;
+  margin: 10px;
+  background-color: white;
+}
+.nameTag p {
+  font-size: 1.2rem;
+}
+
 #katten {
   background-color: #CA0064;
   position: relative;
@@ -86,7 +106,6 @@ main section {
 #katten img {
   position: absolute;
   height: 95vh;
-  left: 2%;
   top: 50%;
   transform: translateY(-50%);
 }
