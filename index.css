@@ -85,10 +85,13 @@ main section {
 }
 #katten .container {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 50%;
+  height: 100vh;
 }
 #katten .container .nameTag {
   display: flex;
@@ -111,8 +114,6 @@ main section {
 #katten .container img {
   position: absolute;
   height: 95vh;
-  top: 50%;
-  transform: translateY(-50%);
 }
 #katten h4 {
   position: absolute;
@@ -135,9 +136,14 @@ main section {
 }
 #hunden .container {
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  max-width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-width: 50%;
+  height: 100vh;
+  overflow: hidden;
 }
 #hunden .container .nameTag {
   display: flex;
@@ -158,10 +164,9 @@ main section {
   font-size: 1.2rem;
 }
 #hunden .container img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
   height: 100vh;
+  justify-self: flex-end;
+  align-self: flex-end;
 }
 #hunden h4 {
   position: absolute;

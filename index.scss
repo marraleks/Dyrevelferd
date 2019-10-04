@@ -92,10 +92,13 @@ main {
   // overflow: hidden;
   .container {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 50%;
+    height: 100vh;
     .nameTag {
       display: flex;
       justify-content: center;
@@ -117,8 +120,9 @@ main {
     img {
       position: absolute;
       height: 95vh;
-      top: 50%;
-      transform: translateY(-50%);
+
+      // top: 50%;
+      // transform: translateY(-50%);
     }
   }
 
@@ -144,9 +148,14 @@ main {
   position: relative;
   .container {
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    max-width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-width: 50%;
+    height: 100vh;
+    overflow: hidden;
     .nameTag {
       display: flex;
       justify-content: center;
@@ -166,10 +175,9 @@ main {
       }
     }
     img {
-      position: absolute;
-      bottom: 0;
-      right: 0;
       height: 100vh;
+      justify-self: flex-end;
+      align-self: flex-end;
     }
   }
 
