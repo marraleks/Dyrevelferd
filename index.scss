@@ -313,6 +313,9 @@ main {
 }
 
 @media (max-width: 700px) {
+  #katten{
+    overflow: hidden;
+  }
   #hunden {
     .container {
       .nameTag {
@@ -323,12 +326,11 @@ main {
       }
     }
     h4 {
-      position: absolute;
       top: 20%;
-      left: 10%;
-      transform: translateY(-50%);
-      z-index: 3;
       font-size: 2.3rem;
     }
+  }
+  #tvillingene{
+    overflow: hidden;
   }
 }
