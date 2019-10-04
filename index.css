@@ -43,7 +43,10 @@ main section {
   color: #f4f4f4;
   font-size: 6rem;
   font-weight: 700;
-  margin-top: 200px;
+  margin-top: 150px;
+  text-align: center;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 #landingside a {
   font-family: "Amatic SC", cursive;
@@ -51,7 +54,7 @@ main section {
   color: #f4f4f4;
   transform: rotate(90deg);
   text-decoration: none;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .quote {
@@ -297,6 +300,10 @@ main section {
 }
 
 @media (max-width: 700px) {
+  #landingside #typetext {
+    font-size: 4rem;
+  }
+
   #katten {
     overflow: hidden;
   }
