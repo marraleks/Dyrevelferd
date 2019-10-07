@@ -60,6 +60,45 @@ main section {
   width: 100vw;
 }
 
+#dot-menu {
+  position: fixed;
+  height: 300px;
+  width: 150px;
+  z-index: 1000;
+  top: 43vh;
+  right: 5vw;
+}
+#dot-menu .menu-hover {
+  display: flex;
+  align-items: center;
+}
+#dot-menu .menu-hover .menu-name {
+  opacity: 0;
+  transition: 0.5s;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  padding-right: 5px;
+}
+#dot-menu .menu-hover .bullets {
+  background-color: transparent;
+  border: 2px solid white;
+  height: 15px;
+  width: 15px;
+  display: flex;
+  list-style: none;
+  border-radius: 50%;
+  margin: 15px;
+  transition: 0.5s ease;
+  cursor: none;
+}
+#dot-menu .menu-hover:hover .menu-name {
+  opacity: 1;
+}
+#dot-menu .menu-hover:hover .bullets {
+  transform: scale(2);
+  background-color: white;
+}
+
 .mobile {
   display: none;
 }
@@ -73,28 +112,16 @@ main section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
 }
 #landingside #typetext {
   font-family: "Amatic SC", cursive;
   color: #f4f4f4;
   font-size: 6rem;
   font-weight: 700;
-  margin-top: 150px;
+  margin-top: 40vh;
   text-align: start;
   margin-left: 75px;
   margin-right: 50px;
-  text-align: start;
-}
-#landingside a {
-  font-family: "Amatic SC", cursive;
-  font-size: 7rem;
-  color: #f4f4f4;
-  transform: rotate(90deg);
-  text-decoration: none;
-  margin-top: 50px;
-  user-select: none;
-  cursor: none;
 }
 
 .quote {
@@ -239,9 +266,8 @@ main section {
   flex-direction: column-reverse;
   align-items: center;
   z-index: 1;
-  bottom: 10%;
-  left: 43%;
-  transform: translate(-300%);
+  bottom: 7%;
+  left: 33%;
 }
 #tvillingene .nameTag-pelle .nameLine {
   height: 100px;
@@ -259,8 +285,7 @@ main section {
   align-items: center;
   z-index: 1;
   top: 18%;
-  right: 40%;
-  transform: translate(100%, 10%);
+  right: 38%;
 }
 #tvillingene .nameTag-petter .nameLine {
   height: 100px;
@@ -364,14 +389,6 @@ main section {
   #landingside #typetext {
     font-size: 5rem;
     padding: 20px;
-  }
-  #landingside a {
-    background-color: white;
-    height: 10px;
-    width: 10px;
-    z-index: 400;
-    position: fixed;
-    display: block;
   }
 
   #katten {

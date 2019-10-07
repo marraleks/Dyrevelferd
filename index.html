@@ -32,15 +32,20 @@
 <body onload="typeWriter()">
     <div class="cursor"></div>
 
-  <main>
 
+  <main>
+      <div id="dot-menu">
+        <div class="menu-hover">
+          <p class="menu-name">Amalie Snøpels</p><a href="#katten" class="bullets"></a>
+        </div>
+          <a href="#hunden" class="bullets"></a>
+          <a href="#tvillingene" class="bullets"></a>
+          <a href="#call-to-action" class="bullets"></a>
+        </div>
     <section id="landingside">
       <h2 id="typetext"></h2>
       <!-- <a href="#katten" class="arrow">></a> -->
-        <a href="#katten" class="bullets"></a>
-        <a href="#hunder" class="bullets"></a>
-        <a href="#tvillingene" class="bullets"></a>
-        <a href="#call-to-action" class="bullets"></a>
+      
     </section>
 
     <section id="katten" class="quote">
@@ -92,15 +97,15 @@
         Markus og Martinus!»</h4>
       <h4 id="pelle" class="mobile">«Petter, vi skal bli de nye<br>
         Markus og Martinus!»</h4>
-        <div class="nameTag-pelle">
+        <div data-aos="slide-up" class="nameTag-pelle">
           <p class="name">Pelle Frizzi</p>
           <div class="nameLine"></div>
         </div>
       <div>
         <img src="src/img/pelle_petter.jpg" alt="tvillingene sine amnbisjoner">
       </div>
-      <div class="nameTag-petter">
-        <p class="name">Petter Frizzi</p>
+      <div data-aos="slide-up"class="nameTag-petter">
+        <p data-aos="fade-in"class="name">Petter Frizzi</p>
         <div class="nameLine"></div>
       </div>
       <h4 id="petter" data-aos="fade-in">«Ja, særlig...»</h4>
