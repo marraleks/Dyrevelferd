@@ -192,7 +192,7 @@ main {
       flex-direction: column;
       align-items: center;
       z-index: 1;
-      top: 70px;
+      top: 8%;
       .nameLine {
         height: 100px;
         width: 1px;
@@ -404,6 +404,9 @@ main {
     opacity: 0;
   }
 
+  #dot-menu {
+    display: none;
+  }
   main {
     scroll-snap-type: y mandatory;
     overflow: auto;
@@ -438,7 +441,7 @@ main {
       }
     }
     h4 {
-      top: 90%;
+      top: 85%;
       font-size: 2.4rem;
     }
   }
@@ -447,6 +450,7 @@ main {
     .container {
       .nameTag {
         top: 35%;
+        font-weight: 600;
       }
       img {
         height: 70vh;
@@ -467,11 +471,13 @@ main {
     .nameTag-petter {
       right: 30%;
       top: 23%;
+      font-weight: 600;
     }
     .nameTag-pelle {
       bottom: 15%;
       left: -5%;
       transform: translate(100%);
+      font-weight: 600;
     }
     img {
       width: 120vw;
@@ -487,6 +493,10 @@ main {
       bottom: 23%;
       right: 3%;
     }
+  }
+
+  .nameTag {
+    font-weight: 600;
   }
 
   #call-to-action {
@@ -510,5 +520,14 @@ main {
         font-weight: 400;
       }
     }
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: flex;
+    }
+  }
+  .nameLine {
+    display: none;
   }
 }

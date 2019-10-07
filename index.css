@@ -172,7 +172,7 @@ main section {
   flex-direction: column;
   align-items: center;
   z-index: 1;
-  top: 70px;
+  top: 8%;
 }
 #katten .container .nameTag .nameLine {
   height: 100px;
@@ -370,6 +370,10 @@ main section {
     opacity: 0;
   }
 
+  #dot-menu {
+    display: none;
+  }
+
   main {
     scroll-snap-type: y mandatory;
     overflow: auto;
@@ -404,12 +408,13 @@ main section {
     height: 80vh;
   }
   #katten h4 {
-    top: 90%;
+    top: 85%;
     font-size: 2.4rem;
   }
 
   #hunden .container .nameTag {
     top: 35%;
+    font-weight: 600;
   }
   #hunden .container img {
     height: 70vh;
@@ -430,11 +435,13 @@ main section {
   #tvillingene .nameTag-petter {
     right: 30%;
     top: 23%;
+    font-weight: 600;
   }
   #tvillingene .nameTag-pelle {
     bottom: 15%;
     left: -5%;
     transform: translate(100%);
+    font-weight: 600;
   }
   #tvillingene img {
     width: 120vw;
@@ -449,6 +456,10 @@ main section {
     font-size: 3rem;
     bottom: 23%;
     right: 3%;
+  }
+
+  .nameTag {
+    font-weight: 600;
   }
 
   #call-to-action h3 {
@@ -470,6 +481,16 @@ main section {
     font-family: "Amatic SC", cursive;
     font-size: 1.6rem;
     font-weight: 400;
+  }
+  #call-to-action .desktop {
+    display: none;
+  }
+  #call-to-action .mobile {
+    display: flex;
+  }
+
+  .nameLine {
+    display: none;
   }
 }
 
