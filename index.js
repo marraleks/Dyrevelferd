@@ -1,6 +1,6 @@
 let i = 0;
-let txt = 'Når jeg blir stor'; /* The text */
-let speed = 100; /* The speed/duration of the effect in milliseconds */
+let txt = 'Når jeg blir stor';
+let speed = 100; 
 
 function typeWriter() {
   if (i < txt.length) {
@@ -53,9 +53,9 @@ function touchPress() {
 //   window.scrollTo(0,0)
 // })
 
-//   // We execute the same script as before
-//   let vh = window.innerHeight * 0.01;
-//   document.documentElement.style.setProperty('--vh', `${vh}px`);
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 //   let currentSlide = 1;
 //   let date = new Date()

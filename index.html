@@ -27,7 +27,6 @@
   <link rel="stylesheet" href="./index.css" />
 </head>
 
-<div id="info">0</div>
 
 <body onload="typeWriter()">
     <div class="cursor"></div>
@@ -38,6 +37,7 @@
       <h2 id="typetext"></h2>
       <a href="#katten" class="arrow">></a>
     </section>
+
     <section id="katten" class="quote">
       <div class="kampanjeTittel">
         <div class="lines"></div>
@@ -51,7 +51,7 @@
       </div>
       <img src="src/img/amalie_snopels.jpg" alt="amalie snøpels sine amnbisjoner">
     </div>
-      <h4 data-300="transform: translateX(100%)" data-650="transform: translateX(0%)">«Jeg skal bli instafamous.<br>
+      <h4>«Jeg skal bli instafamous.<br>
         Da slipper jeg å jobbe så mye»</h4>
     </section>
 
@@ -110,30 +110,8 @@
     </section>
 
   </main>
-  <!-- <main>    
-        <h1>Jeg er den eneste h1 på siden og inneholder sidens budskap</h1>
-        <p>Jeg er en brødtekst på siden og jeg inneholder viktige keywords, men ikke for mange</p>
-        <p>Prøver meg</p>
-        <div class="image">
-            <img id="dyrevern" src="./cat.jpg" title="Fin katt" alt="Dette er en fin kat" width="600px">
-        </div>
-    </main> -->
-
-  <script src="./index.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-  </script>
-  <script src="./skrollr.js"></script>
-
-  <script>
-    var s = skrollr.init({
-      render: function (data) {
-        //Log the current scroll position.
-        $('#info').text(data.curTop);
-      }
-      });
-  </script>
   
+  <script src="./index.js"></script>  
 </body>
 
 </html>

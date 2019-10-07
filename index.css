@@ -19,16 +19,6 @@ body {
   cursor: none;
 }
 
-#info {
-  position: fixed;
-  top: 20px;
-  left: 5%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 20px;
-  z-index: 9999;
-}
-
 .cursor {
   z-index: 999;
   width: 15px;
@@ -88,7 +78,7 @@ main section {
   font-weight: 700;
   margin-top: 150px;
   text-align: start;
-  margin-left: 50px;
+  margin-left: 75px;
   margin-right: 50px;
   text-align: start;
 }
@@ -349,9 +339,18 @@ main section {
     opacity: 0;
   }
 
+  main {
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+  }
   main section {
+    scroll-snap-align: start;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
+  }
+
+  .jeg::after {
+    content: "<br>";
   }
 
   #landingside #typetext {
