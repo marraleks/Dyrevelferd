@@ -45,8 +45,9 @@ main section {
   font-weight: 700;
   margin-top: 150px;
   text-align: start;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: start;
 }
 #landingside a {
   font-family: "Amatic SC", cursive;
@@ -316,7 +317,7 @@ main section {
   }
   #katten h4 {
     top: 90%;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 
   #hunden .container .nameTag {
@@ -326,20 +327,25 @@ main section {
     height: 70vh;
   }
   #hunden h4 {
+    left: 4%;
     top: 20%;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 
   #tvillingene {
     overflow: hidden;
   }
+  #tvillingene #test {
+    height: 100%;
+    width: 100%;
+  }
   #tvillingene .nameTag-petter {
     right: 30%;
-    top: 20%;
+    top: 23%;
   }
   #tvillingene .nameTag-pelle {
     bottom: 15%;
-    left: 5%;
+    left: -5%;
     transform: translate(100%);
   }
   #tvillingene img {
@@ -347,13 +353,13 @@ main section {
     height: auto;
   }
   #tvillingene #pelle {
-    font-size: 2.6rem;
-    top: 25%;
-    left: 2%;
+    font-size: 2.4rem;
+    top: 11%;
+    left: 5%;
   }
   #tvillingene #petter {
-    font-size: 3.5rem;
-    bottom: 20%;
+    font-size: 3rem;
+    bottom: 23%;
     right: 3%;
   }
 
@@ -374,7 +380,7 @@ main section {
   #call-to-action div p {
     color: #d03d47;
     font-family: "Amatic SC", cursive;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: 400;
   }
 }
