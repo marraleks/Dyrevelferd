@@ -27,8 +27,8 @@ body{
   z-index: 999;
   width: 15px;
   height: 15px;
-  border: 1px solid #f3f3f3;
-  background-color: #f3f3f3;
+  border: 2px solid #f3f3f3;
+  background-color: #d03d47;
   border-radius: 50%;
   position: absolute;
   transition-duration: 200ms;
@@ -99,6 +99,7 @@ main {
     text-decoration: none;
     margin-top: 50px;
     user-select: none;
+    cursor: none;
   }
 }
 
@@ -130,7 +131,7 @@ main {
 #katten {
   background-color: #ca0064;
   position: relative;
-  // overflow: hidden;
+  overflow: auto;
   .container {
     display: flex;
     align-items: center;

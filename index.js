@@ -23,14 +23,8 @@ document.querySelector("#dyrevern").addEventListener('click', (e) => {
 
 const cursor = document.querySelector('.cursor');
 
-document.getElementById("dyrevern").addEventListener("mouseover", mouseOver);
-
-function mouseOver() {
-  document.querySelector(".cursor").style.backgroundColor = "red";
-}
-
 document.addEventListener('mousemove', e => {
-    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+    cursor.setAttribute("style", "top: "+(e.pageY - 7.5)+"px; left: "+(e.pageX - 7.5)+"px;")
 })
 
 
