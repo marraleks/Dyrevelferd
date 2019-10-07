@@ -35,3 +35,7 @@ document.addEventListener('click', () => {
         cursor.classList.remove("expand");
     }, 500)
 })
+
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);

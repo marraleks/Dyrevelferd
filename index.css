@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 body {
@@ -341,6 +342,11 @@ main section {
 }
 
 @media (max-width: 700px) {
+  main section {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
   #landingside #typetext {
     font-size: 5rem;
     padding: 20px;
