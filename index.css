@@ -36,6 +36,7 @@ body {
 @keyframes cursorAnim3 {
   0% {
     transform: scale(1);
+    opacity: 1;
   }
   50% {
     transform: scale(2);
@@ -340,6 +341,10 @@ main section {
 }
 
 @media (max-width: 700px) {
+  .cursor {
+    opacity: 0;
+  }
+
   main section {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
