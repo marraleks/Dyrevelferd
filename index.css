@@ -22,8 +22,8 @@ body {
   z-index: 999;
   width: 15px;
   height: 15px;
-  border: 1px solid #4e4e4e;
-  background-color: #4e4e4e;
+  border: 1px solid #f3f3f3;
+  background-color: #f3f3f3;
   border-radius: 50%;
   position: absolute;
   transition-duration: 200ms;
@@ -112,6 +112,11 @@ main section {
   left: 50%;
   transform: translate(-50%);
 }
+.kampanjeTittel .lines {
+  width: 10px;
+  height: 1px;
+  margin: 7px;
+}
 
 #katten {
   background-color: #ca0064;
@@ -161,7 +166,6 @@ main section {
 }
 #katten .kampanjeTittel .lines {
   background-color: #ff2290;
-  z-index: 10;
 }
 
 #hunden {
@@ -320,7 +324,7 @@ main section {
   justify-content: center;
   border-radius: 75px;
   box-shadow: -1px 7px 1px rgba(68, 68, 68, 0.6);
-  cursor: pointer;
+  cursor: none;
   user-select: none;
 }
 #call-to-action div p {

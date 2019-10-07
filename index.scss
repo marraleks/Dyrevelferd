@@ -27,8 +27,8 @@ body{
   z-index: 999;
   width: 15px;
   height: 15px;
-  border: 1px solid rgb(78, 78, 78);
-  background-color: rgb(78, 78, 78);
+  border: 1px solid #f3f3f3;
+  background-color: #f3f3f3;
   border-radius: 50%;
   position: absolute;
   transition-duration: 200ms;
@@ -120,6 +120,11 @@ main {
   top: 30px;
   left: 50%;
   transform: translate(-50%);
+  .lines {
+      width: 10px;
+      height: 1px;
+      margin: 7px;
+  }
 }
 
 #katten {
@@ -173,7 +178,6 @@ main {
     z-index: 10;
     .lines {
       background-color: #ff2290;
-      z-index: 10;
     }
   }
 }
@@ -339,7 +343,7 @@ main {
     justify-content: center;
     border-radius: 75px;
     box-shadow: -1px 7px 1px rgba(68, 68, 68, 0.6);
-    cursor: pointer;
+    cursor: none;
     user-select: none;
     
     p {
