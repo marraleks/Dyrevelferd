@@ -27,6 +27,8 @@
   <link rel="stylesheet" href="./index.css" />
 </head>
 
+<div id="info">0</div>
+
 <body onload="typeWriter()">
     <div class="cursor"></div>
 
@@ -49,7 +51,7 @@
       </div>
       <img src="src/img/amalie_snopels.jpg" alt="amalie snøpels sine amnbisjoner">
     </div>
-      <h4>«Jeg skal bli instafamous.<br>
+      <h4 data-300="transform: translateX(100%)" data-650="transform: translateX(0%)">«Jeg skal bli instafamous.<br>
         Da slipper jeg å jobbe så mye»</h4>
     </section>
 
@@ -118,6 +120,20 @@
     </main> -->
 
   <script src="./index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+  </script>
+  <script src="./skrollr.js"></script>
+
+  <script>
+    var s = skrollr.init({
+      render: function (data) {
+        //Log the current scroll position.
+        $('#info').text(data.curTop);
+      }
+      });
+  </script>
+  
 </body>
 
 </html>
