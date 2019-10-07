@@ -42,13 +42,6 @@ function touchPress() {
   document.getElementById("dyrevern").style.transform = "translateY(4px)";
   document.getElementById("dyrevern").style.boxShadow = "-1px 4px 1px rgba(68, 68, 68, 0.6)";
 }
-
-
-
-
-
-
-
 // window.addEventListener('scroll', () => {
 //   window.scrollTo(0,0)
 // })

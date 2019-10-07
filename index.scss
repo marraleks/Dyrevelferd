@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Oswald:300,400&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap');
 
 $default-header-font: "Amatic SC", cursive;
 $default-text-font: "Oswald", sans-serif;
@@ -32,9 +33,6 @@ body {
   background-color: #d03d47;
   border-radius: 50%;
   position: absolute;
-  transition-duration: 100ms;
-  transition-timing-function: ease-out;
-  animation: cursorAnim 0.5s infinite alternate;
   pointer-events: none;
 }
 
@@ -70,30 +68,34 @@ main {
 }
 #dot-menu {
   position: fixed;
-  height: 300px;
+  height: 400px;
   width: 150px;
   z-index: 1000;
-  top: 43vh;
-  right: 5vw;
+  top: 40%;
+  right: 0;
+  user-select: none;
   .menu-hover {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     .menu-name {
       opacity: 0;
       transition: 0.5s;
       color: white;
       font-family: $default-text-font;
       padding-right: 5px;
+      font-size: 0.8rem;
+      font-weight: 200;
     }
     .bullets {
       background-color: transparent;
-      border: 2px solid white;
-      height: 15px;
-      width: 15px;
+      border: 1px solid white;
+      height: 12px;
+      width: 12px;
       display: flex;
       list-style: none;
       border-radius: 50%;
-      margin: 15px;
+      margin: 10px;
       transition: 0.5s ease;
       cursor: none;
     }
@@ -103,7 +105,7 @@ main {
       opacity: 1;
     }
     .bullets {
-      transform: scale(2);
+      transform: scale(1.5);
       background-color: white;
     }
   }

@@ -1,138 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-148516562-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148516562-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+      gtag("config", "UA-148516562-1");
+    </script>
 
-    gtag("config", "UA-148516562-1");
-  </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Når jeg blir stor</title>
+    <meta name="description" content="Hva slags ambisjoner har dyr?" />
+    <meta
+      name="subject"
+      content="dyr, dyremishandling, landbruk, dyevelferd, "
+    />
+    <meta name="author" content="Eivind Pham, Marius Aleksander Sletten" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://marraleks.github.io/Naar_Jeg_Blir_Stor/src/img/sigurd_tusselabb.jpg"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Når jeg blir stor</title>
-  <meta name="description" content="Hva slags ambisjoner har dyr?" />
-  <meta name="subject" content="dyr, dyremishandling, landbruk, dyevelferd, " />
-  <meta name="author" content="Eivind Pham, Marius Aleksander Sletten" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://marraleks.github.io/Naar_Jeg_Blir_Stor/src/img/sigurd_tusselabb.jpg" />
-  <link rel="stylesheet" href="./index.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-
-
-<body onload="typeWriter()">
+  <body onload="typeWriter()">
     <div class="cursor"></div>
-
-
-  <main>
+    <main>
       <div id="dot-menu">
         <div class="menu-hover">
-          <p class="menu-name">Amalie Snøpels</p><a href="#katten" class="bullets"></a>
+          <a href="#katten" class="bullets"></a>
+          <p class="menu-name">Amalie Snøpels</p>
         </div>
+        <div class="menu-hover">
           <a href="#hunden" class="bullets"></a>
-          <a href="#tvillingene" class="bullets"></a>
-          <a href="#call-to-action" class="bullets"></a>
+          <p class="menu-name">Sigurd "Biggie"</p>
         </div>
-    <section id="landingside">
-      <h2 id="typetext"></h2>
-      <!-- <a href="#katten" class="arrow">></a> -->
-      
-    </section>
-
-    <section id="katten" class="quote">
-      <div class="kampanjeTittel">
-        <div class="lines"></div>
-        <p>Når jeg blir stor</p>
-        <div class="lines"></div>
+        <div class="menu-hover">
+          <a href="#tvillingene" class="bullets"></a>
+          <p class="menu-name">Frizzi Twins</p>
+        </div>
+        <div class="menu-hover">
+          <a href="#call-to-action" class="bullets"></a>
+          <p class="menu-name">Et godt liv</p>
+        </div>
+        <!-- <a href="#hunden" class="bullets"></a>
+        <a href="#tvillingene" class="bullets"></a>
+        <a href="#call-to-action" class="bullets"></a> -->
       </div>
-      <div class="container">
-      <div data-aos="slide-up" class="nameTag">
-        <p class="name">Amalie Snøpels</p>
-        <div class="nameLine"></div>
-      </div>
-      <img src="src/img/amalie_snopels.jpg" alt="amalie snøpels sine amnbisjoner">
-    </div>
-      <h4 data-aos="fade-in">«Jeg skal bli instafamous.<br>
-        Da slipper jeg å jobbe så mye»</h4>
-      <h4 class="mobile">«Jeg skal bli instafamous.<br>
-        Da slipper jeg å jobbe så mye»</h4>
-    </section>
-
-    <section id="hunden" class="quote">
-      <div class="kampanjeTittel">
-        <div class="lines"></div>
-        <p>Når jeg blir stor</p>
-        <div class="lines"></div>
-      </div>
-      <h4 data-aos="fade-in">«Mamma sier jeg ikke får lov &mdash;<br>
-        men jeg skal bli gangster»</h4>
-      <h4 class="mobile">«Mamma sier jeg ikke får lov &mdash;<br>
-        men jeg skal bli gangster»</h4>
+      <section id="landingside">
+        <h2 id="typetext"></h2>
+        <!-- <a href="#katten" class="arrow">></a> -->
+      </section>
+      <section id="katten" class="quote">
+        <div class="kampanjeTittel">
+          <div class="lines"></div>
+          <p>Når jeg blir stor</p>
+          <div class="lines"></div>
+        </div>
         <div class="container">
           <div data-aos="slide-up" class="nameTag">
-              <p data-aos="fade-in" class="name">Sigurd "Biggie" Tusselabb</p>
-              <div class="nameLine"></div>
+            <p class="name">Amalie Snøpels</p>
+            <div class="nameLine"></div>
           </div>
-          <img src="src/img/sigurd_tusselabb.jpg" alt="sigurd sine ambisjoner">
-      </div>
-    </section>
-
-    <section id="tvillingene" class="quote">
-      <div id="test">
-      <div class="kampanjeTittel">
-        <div class="lines"></div>
-          <p> Når jeg blir stor</p>
-        <div class="lines"></div>
-      </div>
-      <h4 id="pelle" data-aos="fade-in">«Petter, vi skal bli de nye<br>
-        Markus og Martinus!»</h4>
-      <h4 id="pelle" class="mobile">«Petter, vi skal bli de nye<br>
-        Markus og Martinus!»</h4>
-        <div data-aos="slide-up" class="nameTag-pelle">
-          <p class="name">Pelle Frizzi</p>
-          <div class="nameLine"></div>
+          <img
+            src="src/img/amalie_snopels.jpg"
+            alt="amalie snøpels sine amnbisjoner"
+          />
         </div>
-      <div>
-        <img src="src/img/pelle_petter.jpg" alt="tvillingene sine amnbisjoner">
-      </div>
-      <div data-aos="slide-up"class="nameTag-petter">
-        <p data-aos="fade-in"class="name">Petter Frizzi</p>
-        <div class="nameLine"></div>
-      </div>
-      <h4 id="petter" data-aos="fade-in">«Ja, særlig...»</h4>
-      <h4 id="petter" class="mobile">«Ja, særlig...»</h4>
-    </div>
-    </section>
-
-   
-
-    <section id="call-to-action">
-      <h3>Alle fortjener et godt liv.</h3>
-      <p id="quote-to-action">
-        Dyr har nødvendigvis ikke samme ambisjoner som mennesker, <br />
-        men det betyr ikke at de ikke fortjener et godt liv.
-      </p>
-      <div id="dyrevern">
-        <p>Gjør ditt !</p>
-      </div>
-    </section>
-
-  </main>
-  
-  <script src="./index.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
-
+        <h4 data-aos="fade-in">
+          «Jeg skal bli instafamous.<br />
+          Da slipper jeg å jobbe så mye»
+        </h4>
+        <h4 class="mobile">
+          «Jeg skal bli instafamous.<br />
+          Da slipper jeg å jobbe så mye»
+        </h4>
+      </section>
+      <section id="hunden" class="quote">
+        <div class="kampanjeTittel">
+          <div class="lines"></div>
+          <p>Når jeg blir stor</p>
+          <div class="lines"></div>
+        </div>
+        <h4 data-aos="fade-in">
+          «Mamma sier jeg ikke får lov &mdash;<br />
+          men jeg skal bli gangster»
+        </h4>
+        <h4 class="mobile">
+          «Mamma sier jeg ikke får lov &mdash;<br />
+          men jeg skal bli gangster»
+        </h4>
+        <div class="container">
+          <div data-aos="slide-up" class="nameTag">
+            <p class="name">Sigurd "Biggie" Tusselabb</p>
+            <div class="nameLine"></div>
+          </div>
+          <img
+            src="src/img/sigurd_tusselabb.jpg"
+            alt="sigurd sine ambisjoner"
+          />
+        </div>
+      </section>
+      <section id="tvillingene" class="quote">
+        <div id="test">
+          <div class="kampanjeTittel">
+            <div class="lines"></div>
+            <p>Når jeg blir stor</p>
+            <div class="lines"></div>
+          </div>
+          <h4 id="pelle" data-aos="fade-in">
+            «Petter, vi skal bli de nye<br />
+            Markus og Martinus!»
+          </h4>
+          <h4 id="pelle" class="mobile">
+            «Petter, vi skal bli de nye<br />
+            Markus og Martinus!»
+          </h4>
+          <div data-aos="slide-up" class="nameTag-pelle">
+            <p class="name">Pelle Frizzi</p>
+            <div class="nameLine"></div>
+          </div>
+          <div>
+            <img
+              src="src/img/pelle_petter.jpg"
+              alt="tvillingene sine amnbisjoner"
+            />
+          </div>
+          <div data-aos="slide-up" class="nameTag-petter">
+            <p class="name">Petter Frizzi</p>
+            <div class="nameLine"></div>
+          </div>
+          <h4 id="petter" data-aos="fade-in">«Ja, særlig...»</h4>
+          <h4 id="petter" class="mobile">«Ja, særlig...»</h4>
+        </div>
+      </section>
+      <section id="call-to-action">
+        <h3 data-aos="fade-in">Alle fortjener et godt liv.</h3>
+        <p data-aos="fade-in" id="quote-to-action">
+          Dyr har nødvendigvis ikke samme ambisjoner som mennesker, <br />
+          men det betyr ikke at de ikke fortjener et godt liv.
+        </p>
+        <div data-aos="fade-in" id="dyrevern">
+          <p>Gjør ditt !</p>
+        </div>
+        <div data-aos="fade-in" id="dyrevern">
+          <p>Gjør ditt !</p>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
