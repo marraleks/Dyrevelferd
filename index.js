@@ -36,6 +36,57 @@ document.addEventListener('click', () => {
     }, 500)
 })
 
-  // We execute the same script as before
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+
+
+// window.addEventListener('scroll', () => {
+//   window.scrollTo(0,0)
+// })
+
+//   // We execute the same script as before
+//   let vh = window.innerHeight * 0.01;
+//   document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+//   let currentSlide = 1;
+//   let date = new Date()
+//   before = date.getTime()
+
+//   window.addEventListener('wheel', function (e) {
+
+//       console.log(e.deltaY);
+
+//       //wait 2 secs between doing something because the wheel events happpen multiple times
+//       let date = new Date()
+//       now = date.getTime()
+//       let threshold = Math.abs(e.deltaY)
+
+//       //set higher threshold limit for less reaction
+//       if (now - before < 800 && threshold < 50) {
+//           return //stop function entirely
+//       } else {
+//           before = now
+//       }
+
+//       //normalize horisontal/vertical scroll (otherwise the value can be somewhere between zero and 50+) 
+//       let y = e.deltaY > 0 ? 1 : -1
+
+//       //scroll directions
+//       if( y <= 0 ) {
+//           currentSlide += 1 
+//       }else{
+//           currentSlide -= 1
+//       }
+
+//       console.log(currentSlide)
+//       if(currentSlide >= 0 && currentSlide <= 5){
+//           shiftSlide(currentSlide)
+//       }
+
+//   });
+
+//   let lastSlide = 0;
+//   function shiftSlide(current){
+//     document.querySelectorAll('section').forEach( (e) => {
+//         e.style.transform = "translateY(-" + current * 100 + "vh)"
+//     })
+//   }
