@@ -60,6 +60,10 @@ main section {
   width: 100vw;
 }
 
+.mobile {
+  display: none;
+}
+
 .arrow {
   text-shadow: 3px 1px 0px rgba(68, 68, 68, 0.6);
 }
@@ -353,9 +357,21 @@ main section {
     content: "<br>";
   }
 
+  .mobile {
+    display: flex;
+  }
+
   #landingside #typetext {
     font-size: 5rem;
     padding: 20px;
+  }
+  #landingside a {
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    z-index: 400;
+    position: fixed;
+    display: block;
   }
 
   #katten {

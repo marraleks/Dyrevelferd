@@ -20,11 +20,9 @@ $default-quote-size: 5rem;
   box-sizing: border-box;
   user-select: none;
 }
-body{
+body {
   cursor: none;
 }
-
-
 
 .cursor {
   z-index: 999;
@@ -36,21 +34,20 @@ body{
   position: absolute;
   transition-duration: 100ms;
   transition-timing-function: ease-out;
-  animation: cursorAnim .5s infinite alternate;
+  animation: cursorAnim 0.5s infinite alternate;
   pointer-events: none;
 }
 
-
 @keyframes cursorAnim3 {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
   50% {
-      transform: scale(2);
-  } 
+    transform: scale(2);
+  }
   100% {
-      transform: scale(1);
-      opacity: 0;
+    transform: scale(1);
+    opacity: 0;
   }
 }
 
@@ -69,8 +66,11 @@ main {
     // scroll-snap-align: start;
     height: 100vh;
     width: 100vw;
-   
   }
+}
+
+.mobile {
+  display: none;
 }
 
 .arrow {
@@ -114,7 +114,6 @@ main {
   font-size: $default-quote-size;
 }
 
-
 .kampanjeTittel {
   font-family: $default-text-font;
   font-size: 1.2rem;
@@ -126,9 +125,9 @@ main {
   left: 50%;
   transform: translate(-50%);
   .lines {
-      width: 10px;
-      height: 1px;
-      margin: 7px;
+    width: 10px;
+    height: 1px;
+    margin: 7px;
   }
 }
 
@@ -250,43 +249,43 @@ main {
   align-items: center;
   // overflow: hidden;
 
-    .nameTag-pelle {
-      display: flex;
-      position: absolute;
-      flex-direction: column-reverse;
-      align-items: center;
-      z-index: 1;
-      bottom: 10%;
-      left: 43%;
-      transform: translate(-300%);
-      .nameLine {
-        height: 100px;
-        width: 1px;
-        margin: 10px;
-        background-color: white;
-      }
-      p {
-        font-size: 1.3rem;
-      }
+  .nameTag-pelle {
+    display: flex;
+    position: absolute;
+    flex-direction: column-reverse;
+    align-items: center;
+    z-index: 1;
+    bottom: 10%;
+    left: 43%;
+    transform: translate(-300%);
+    .nameLine {
+      height: 100px;
+      width: 1px;
+      margin: 10px;
+      background-color: white;
     }
-    .nameTag-petter {
-      display: flex;
-      position: absolute;
-      flex-direction: column;
-      align-items: center;
-      z-index: 1;
-      top: 18%;
-      right: 40%;
-      transform: translate(100%, 10%);
-      .nameLine {
-        height: 100px;
-        width: 1px;
-        margin: 10px;
-        background-color: white;
-      }
-      p {
-        font-size: 1.3rem;
-      }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+  .nameTag-petter {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    top: 18%;
+    right: 40%;
+    transform: translate(100%, 10%);
+    .nameLine {
+      height: 100px;
+      width: 1px;
+      margin: 10px;
+      background-color: white;
+    }
+    p {
+      font-size: 1.3rem;
+    }
   }
   img {
     height: 70%;
@@ -295,8 +294,7 @@ main {
     transform: translate(-50%, -50%);
     position: absolute;
   }
-  
-  
+
   h4 {
     position: absolute;
     z-index: 2;
@@ -350,7 +348,7 @@ main {
     box-shadow: -1px 7px 1px rgba(68, 68, 68, 0.6);
     cursor: none;
     user-select: none;
-    
+
     p {
       color: #d03d47;
       font-family: $default-header-font;
@@ -361,47 +359,56 @@ main {
 }
 
 @media (max-width: 700px) {
-
-.cursor{
-  opacity: 0;
-}
-
-main{
-  scroll-snap-type: y mandatory;
-  overflow: auto;
-  section{
-    scroll-snap-align: start;
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+  .cursor {
+    opacity: 0;
   }
-}
 
-.jeg::after{
-  content: "<br>"
-}
-  
-  #landingside{
-  #typetext {
-    font-size: 5rem;
-    padding: 20px;
+  main {
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+    section {
+      scroll-snap-align: start;
+      height: 100vh;
+      height: calc(var(--vh, 1vh) * 100);
+    }
   }
-}
 
-  #katten{
+  .jeg::after {
+    content: "<br>";
+  }
+  .mobile {
+    display: flex;
+  }
+
+  #landingside {
+    #typetext {
+      font-size: 5rem;
+      padding: 20px;
+    }
+    a {
+      background-color: white;
+      height: 10px;
+      width: 10px;
+      z-index: 400;
+      position: fixed;
+      display: block;
+    }
+  }
+
+  #katten {
     overflow: hidden;
     .container {
       position: relative;
       margin-top: 60px;
-      img{
+      img {
         height: 80vh;
       }
     }
-    h4{
+    h4 {
       top: 90%;
       font-size: 2.4rem;
     }
   }
-
 
   #hunden {
     .container {
@@ -418,17 +425,17 @@ main{
       font-size: 2.4rem;
     }
   }
-  #tvillingene{
+  #tvillingene {
     overflow: hidden;
     #test {
       height: 100%;
       width: 100%;
     }
-    .nameTag-petter{
+    .nameTag-petter {
       right: 30%;
       top: 23%;
     }
-    .nameTag-pelle{
+    .nameTag-pelle {
       bottom: 15%;
       left: -5%;
       transform: translate(100%);
@@ -449,28 +456,26 @@ main{
     }
   }
 
-
-  #call-to-action{
+  #call-to-action {
     h3 {
       font-family: $default-header-font;
       font-size: 3rem;
       margin: 30px;
     }
+    p {
+      font-family: $default-text-font;
+      font-weight: 300;
+      font-size: 1rem;
+    }
+    div {
+      width: 150px;
+      height: 50px;
       p {
-        font-family: $default-text-font;
-        font-weight: 300;
-        font-size: 1rem;
+        color: #d03d47;
+        font-family: $default-header-font;
+        font-size: 1.6rem;
+        font-weight: 400;
       }
-      div {
-        width: 150px;
-        height: 50px;
-        p {
-          color: #d03d47;
-          font-family: $default-header-font;
-          font-size: 1.6rem;
-          font-weight: 400;
-        }
-      }
-    
+    }
   }
 }

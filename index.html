@@ -25,6 +25,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://marraleks.github.io/Naar_Jeg_Blir_Stor/src/img/sigurd_tusselabb.jpg" />
   <link rel="stylesheet" href="./index.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 
@@ -35,7 +36,11 @@
 
     <section id="landingside">
       <h2 id="typetext"></h2>
-      <a href="#katten" class="arrow">></a>
+      <!-- <a href="#katten" class="arrow">></a> -->
+        <a href="#katten" class="bullets"></a>
+        <a href="#hunder" class="bullets"></a>
+        <a href="#tvillingene" class="bullets"></a>
+        <a href="#call-to-action" class="bullets"></a>
     </section>
 
     <section id="katten" class="quote">
@@ -45,13 +50,15 @@
         <div class="lines"></div>
       </div>
       <div class="container">
-      <div class="nameTag">
+      <div data-aos="slide-up" class="nameTag">
         <p class="name">Amalie Snøpels</p>
         <div class="nameLine"></div>
       </div>
       <img src="src/img/amalie_snopels.jpg" alt="amalie snøpels sine amnbisjoner">
     </div>
-      <h4>«Jeg skal bli instafamous.<br>
+      <h4 data-aos="fade-in">«Jeg skal bli instafamous.<br>
+        Da slipper jeg å jobbe så mye»</h4>
+      <h4 class="mobile">«Jeg skal bli instafamous.<br>
         Da slipper jeg å jobbe så mye»</h4>
     </section>
 
@@ -61,11 +68,13 @@
         <p>Når jeg blir stor</p>
         <div class="lines"></div>
       </div>
-      <h4>«Mamma sier jeg ikke får lov &mdash;<br>
+      <h4 data-aos="fade-in">«Mamma sier jeg ikke får lov &mdash;<br>
+        men jeg skal bli gangster»</h4>
+      <h4 class="mobile">«Mamma sier jeg ikke får lov &mdash;<br>
         men jeg skal bli gangster»</h4>
         <div class="container">
-          <div class="nameTag">
-              <p class="name">Sigurd "Biggie" Tusselabb</p>
+          <div data-aos="slide-up" class="nameTag">
+              <p data-aos="fade-in" class="name">Sigurd "Biggie" Tusselabb</p>
               <div class="nameLine"></div>
           </div>
           <img src="src/img/sigurd_tusselabb.jpg" alt="sigurd sine ambisjoner">
@@ -79,7 +88,9 @@
           <p> Når jeg blir stor</p>
         <div class="lines"></div>
       </div>
-      <h4 id="pelle">«Petter, vi skal bli de nye<br>
+      <h4 id="pelle" data-aos="fade-in">«Petter, vi skal bli de nye<br>
+        Markus og Martinus!»</h4>
+      <h4 id="pelle" class="mobile">«Petter, vi skal bli de nye<br>
         Markus og Martinus!»</h4>
         <div class="nameTag-pelle">
           <p class="name">Pelle Frizzi</p>
@@ -92,7 +103,8 @@
         <p class="name">Petter Frizzi</p>
         <div class="nameLine"></div>
       </div>
-      <h4 id="petter">«Ja, særlig...»</h4>
+      <h4 id="petter" data-aos="fade-in">«Ja, særlig...»</h4>
+      <h4 id="petter" class="mobile">«Ja, særlig...»</h4>
     </div>
     </section>
 
@@ -111,7 +123,11 @@
 
   </main>
   
-  <script src="./index.js"></script>  
+  <script src="./index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
