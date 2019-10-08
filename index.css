@@ -84,8 +84,8 @@ main section {
 #dot-menu .menu-hover .bullets {
   background-color: transparent;
   border: 1px solid white;
-  height: 12px;
-  width: 12px;
+  height: 10px;
+  width: 10px;
   display: flex;
   list-style: none;
   border-radius: 50%;
@@ -234,6 +234,7 @@ main section {
 }
 #hunden .container .nameTag p {
   font-size: 1.2rem;
+  font-weight: 600;
 }
 #hunden .container img {
   height: 100vh;
@@ -300,6 +301,7 @@ main section {
 }
 #tvillingene img {
   height: 70%;
+  width: auto;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -365,6 +367,128 @@ main section {
   font-weight: 400;
 }
 
+@media (max-width: 1024px) {
+  .cursor {
+    opacity: 0;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .nameTag p {
+    font-size: 5rem;
+  }
+
+  main {
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+  }
+  main section {
+    scroll-snap-align: start;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
+  #landingside #typetext {
+    font-size: 5rem;
+    padding: 20px;
+  }
+
+  h4 {
+    font-size: 5rem;
+  }
+
+  #katten {
+    overflow: auto;
+  }
+  #katten .container {
+    position: relative;
+    margin-top: 60px;
+  }
+  #katten .container .nameTag p {
+    font-size: 2rem;
+  }
+  #katten .container img {
+    height: 80vh;
+  }
+  #katten h4 {
+    top: 85%;
+    right: 20%;
+  }
+
+  #hunden .container .nameTag {
+    top: 35%;
+  }
+  #hunden .container .nameTag p {
+    font-size: 2rem;
+  }
+  #hunden .container img {
+    height: 70vh;
+  }
+  #hunden h4 {
+    left: 4%;
+    top: 20%;
+  }
+
+  #tvillingene {
+    overflow: hidden;
+  }
+  #tvillingene #test {
+    height: 100%;
+    width: 100%;
+  }
+  #tvillingene .nameTag-petter {
+    right: 25%;
+    top: 23%;
+  }
+  #tvillingene .nameTag-petter p {
+    font-size: 2rem;
+  }
+  #tvillingene .nameTag-pelle {
+    bottom: 25%;
+    left: -5%;
+    transform: translate(100%);
+  }
+  #tvillingene .nameTag-pelle p {
+    font-size: 2rem;
+  }
+  #tvillingene img {
+    width: 120vw;
+    height: auto;
+  }
+  #tvillingene #pelle {
+    font-size: 4rem;
+    top: 20%;
+    left: 5%;
+  }
+  #tvillingene #petter {
+    font-size: 4rem;
+    bottom: 23%;
+    right: 3%;
+  }
+
+  #call-to-action h3 {
+    font-family: "Amatic SC", cursive;
+    font-size: 5rem;
+    margin: 30px;
+  }
+  #call-to-action p {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+  #call-to-action .desktop {
+    display: none;
+  }
+  #call-to-action .mobile {
+    display: flex;
+  }
+
+  .nameLine {
+    display: none;
+  }
+}
 @media (max-width: 700px) {
   .cursor {
     opacity: 0;
@@ -384,10 +508,6 @@ main section {
     height: calc(var(--vh, 1vh) * 100);
   }
 
-  .jeg::after {
-    content: "<br>";
-  }
-
   .mobile {
     display: flex;
   }
@@ -404,17 +524,25 @@ main section {
     position: relative;
     margin-top: 60px;
   }
+  #katten .container .nameTag p {
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
   #katten .container img {
     height: 80vh;
   }
   #katten h4 {
     top: 85%;
+    right: 10%;
     font-size: 2.4rem;
   }
 
   #hunden .container .nameTag {
     top: 35%;
+  }
+  #hunden .container .nameTag p {
     font-weight: 600;
+    font-size: 1.3rem;
   }
   #hunden .container img {
     height: 70vh;
@@ -433,15 +561,20 @@ main section {
     width: 100%;
   }
   #tvillingene .nameTag-petter {
-    right: 30%;
-    top: 23%;
+    right: 15%;
+    top: 25%;
+  }
+  #tvillingene .nameTag-petter p {
     font-weight: 600;
+    font-size: 1.3rem;
   }
   #tvillingene .nameTag-pelle {
-    bottom: 15%;
-    left: -5%;
+    bottom: 25%;
     transform: translate(100%);
+  }
+  #tvillingene .nameTag-pelle p {
     font-weight: 600;
+    font-size: 1.3rem;
   }
   #tvillingene img {
     width: 120vw;
