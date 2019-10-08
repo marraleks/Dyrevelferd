@@ -437,12 +437,14 @@ main {
   }
 
   #katten {
-    overflow: auto;
+    overflow: hidden;
     .container {
       position: relative;
       margin-top: 60px;
       .nameTag {
+        top: 4%;
         p {
+          
           font-size: 2rem;
         }
       }
@@ -453,24 +455,27 @@ main {
     h4 {
       top: 85%;
       right: 20%;
+      font-size: 4rem;
     }
   }
 
   #hunden {
+    overflow: hidden;
     .container {
       .nameTag {
-        top: 35%;
+        top: 24%;
          p {
            font-size: 2rem;
          }
       }
       img {
-        height: 70vh;
+        height: 90vh;
       }
     }
     h4 {
       left: 4%;
-      top: 20%;
+      top: 50%;
+      font-size: 4rem;
     }
   }
   #tvillingene {

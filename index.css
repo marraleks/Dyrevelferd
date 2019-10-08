@@ -400,11 +400,14 @@ main section {
   }
 
   #katten {
-    overflow: auto;
+    overflow: hidden;
   }
   #katten .container {
     position: relative;
     margin-top: 60px;
+  }
+  #katten .container .nameTag {
+    top: 4%;
   }
   #katten .container .nameTag p {
     font-size: 2rem;
@@ -415,20 +418,25 @@ main section {
   #katten h4 {
     top: 85%;
     right: 20%;
+    font-size: 4rem;
   }
 
+  #hunden {
+    overflow: hidden;
+  }
   #hunden .container .nameTag {
-    top: 35%;
+    top: 24%;
   }
   #hunden .container .nameTag p {
     font-size: 2rem;
   }
   #hunden .container img {
-    height: 70vh;
+    height: 90vh;
   }
   #hunden h4 {
     left: 4%;
-    top: 20%;
+    top: 50%;
+    font-size: 4rem;
   }
 
   #tvillingene {
