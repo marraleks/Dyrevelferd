@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Oswald:300,400&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Oswald:200,300,400,500,600,700&display=swap");
 
 $default-header-font: "Amatic SC", cursive;
 $default-text-font: "Oswald", sans-serif;
@@ -19,7 +18,6 @@ $default-quote-size: 5rem;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  user-select: none;
   scroll-behavior: smooth;
 }
 body {
@@ -125,6 +123,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   #typetext {
     font-family: $default-header-font;
@@ -136,16 +135,17 @@ main {
     margin-right: 40px;
   }
 
-  // a {
-  //   font-family: $default-header-font;
-  //   font-size: 7rem;
-  //   color: #f4f4f4;
-  //   transform: rotate(90deg);
-  //   text-decoration: none;
-  //   margin-top: 50px;
-  //   user-select: none;
-  //   cursor: none;
-  // }
+  a {
+    font-family: $default-header-font;
+    font-size: 4rem;
+    color: #f7555f;
+    transform: rotate(90deg);
+    text-decoration: none;
+    position: relative;
+    margin-top: 50px;
+    user-select: none;
+    cursor: none;
+  }
 }
 
 .quote {
@@ -416,10 +416,8 @@ main {
     }
   }
   main {
-    scroll-snap-type: y mandatory;
     overflow: auto;
     section {
-      scroll-snap-align: start;
       height: 100vh;
       height: calc(var(--vh, 1vh) * 100);
     }
@@ -573,10 +571,8 @@ main {
     display: none;
   }
   main {
-    scroll-snap-type: y mandatory;
     overflow: auto;
     section {
-      scroll-snap-align: start;
       height: 100vh;
       height: calc(var(--vh, 1vh) * 100);
     }
@@ -610,7 +606,7 @@ main {
     h4 {
       top: 85%;
       right: 10%;
-      font-size: 2.4rem;
+      font-size: 2rem;
     }
   }
 
@@ -630,7 +626,7 @@ main {
     h4 {
       left: 4%;
       top: 20%;
-      font-size: 2.4rem;
+      font-size: 2rem;
     }
   }
   #tvillingene {
@@ -680,16 +676,13 @@ main {
     }
     p {
       font-family: $default-text-font;
-      font-weight: 300;
-      font-size: 1.1rem;
-      margin-left: 10px;
-      margin-right: 10px;
+      font-weight: 200;
+      font-size: 1rem;
     }
     div {
       width: 150px;
       height: 50px;
       p {
-        color: #d03d47;
         font-family: $default-header-font;
         font-size: 1.6rem;
         font-weight: 400;

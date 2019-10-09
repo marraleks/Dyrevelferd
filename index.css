@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Oswald:300,400&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Oswald:200,300,400,500,600,700&display=swap");
 /* @mixin lets you create styles components that you can include in elements by
  writing @include: nameOf @ mixin
  @mixin absCenterPosition() {
@@ -13,7 +12,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  user-select: none;
   scroll-behavior: smooth;
 }
 
@@ -115,6 +113,7 @@ main section {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 #landingside #typetext {
   font-family: "Amatic SC", cursive;
@@ -124,6 +123,17 @@ main section {
   text-align: start;
   margin-left: 85px;
   margin-right: 40px;
+}
+#landingside a {
+  font-family: "Amatic SC", cursive;
+  font-size: 4rem;
+  color: #f7555f;
+  transform: rotate(90deg);
+  text-decoration: none;
+  position: relative;
+  margin-top: 50px;
+  user-select: none;
+  cursor: none;
 }
 
 .quote {
@@ -381,11 +391,9 @@ main section {
   }
 
   main {
-    scroll-snap-type: y mandatory;
     overflow: auto;
   }
   main section {
-    scroll-snap-align: start;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
@@ -528,11 +536,9 @@ main section {
   }
 
   main {
-    scroll-snap-type: y mandatory;
     overflow: auto;
   }
   main section {
-    scroll-snap-align: start;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
@@ -563,7 +569,7 @@ main section {
   #katten h4 {
     top: 85%;
     right: 10%;
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 
   #hunden .container .nameTag {
@@ -579,7 +585,7 @@ main section {
   #hunden h4 {
     left: 4%;
     top: 20%;
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 
   #tvillingene {
@@ -630,17 +636,14 @@ main section {
   }
   #call-to-action p {
     font-family: "Oswald", sans-serif;
-    font-weight: 300;
-    font-size: 1.1rem;
-    margin-left: 10px;
-    margin-right: 10px;
+    font-weight: 200;
+    font-size: 1rem;
   }
   #call-to-action div {
     width: 150px;
     height: 50px;
   }
   #call-to-action div p {
-    color: #d03d47;
     font-family: "Amatic SC", cursive;
     font-size: 1.6rem;
     font-weight: 400;
