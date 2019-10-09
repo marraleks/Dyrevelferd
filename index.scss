@@ -22,6 +22,7 @@ $default-quote-size: 5rem;
 }
 body {
   cursor: none;
+  overflow-x: hidden;
 }
 
 .cursor {
@@ -378,7 +379,7 @@ main {
     font-weight: 300;
     font-size: 1.3rem;
   }
-  div {
+  a {
     width: 250px;
     height: 75px;
     background-color: white;
@@ -390,13 +391,13 @@ main {
     box-shadow: -1px 7px 1px rgba(68, 68, 68, 0.6);
     cursor: none;
     user-select: none;
+    text-decoration: none;
+    color: #d03d47;
+    font-family: $default-header-font;
+    font-size: 2.2rem;
+    font-weight: 400;
 
-    p {
-      color: #d03d47;
-      font-family: $default-header-font;
-      font-size: 2.2rem;
-      font-weight: 400;
-    }
+    
   }
 }
 

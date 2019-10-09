@@ -17,6 +17,7 @@
 
 body {
   cursor: none;
+  overflow-x: hidden;
 }
 
 .cursor {
@@ -355,7 +356,7 @@ main section {
   font-weight: 300;
   font-size: 1.3rem;
 }
-#call-to-action div {
+#call-to-action a {
   width: 250px;
   height: 75px;
   background-color: white;
@@ -367,8 +368,7 @@ main section {
   box-shadow: -1px 7px 1px rgba(68, 68, 68, 0.6);
   cursor: none;
   user-select: none;
-}
-#call-to-action div p {
+  text-decoration: none;
   color: #d03d47;
   font-family: "Amatic SC", cursive;
   font-size: 2.2rem;
