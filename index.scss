@@ -115,36 +115,35 @@ main {
 }
 
 .arrow {
-  text-shadow: 3px 1px 0px rgba(68, 68, 68, 0.6);
+  text-shadow: 2px 0px 1px rgba(68, 68, 68, 0.6);
 }
 
 #landingside {
   background-color: #d03d47;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-auto-flow: row;
   justify-content: center;
-  flex-direction: column;
+  align-items: end;
+
 
   #typetext {
     font-family: $default-header-font;
     color: #f4f4f4;
     font-size: 6rem;
     font-weight: 700;
-    text-align: start;
-    margin-left: 85px;
-    margin-right: 40px;
+    text-align: center;
   }
 
   a {
     font-family: $default-header-font;
     font-size: 4rem;
     color: #f7555f;
-    transform: rotate(90deg);
+    text-align: center;
     text-decoration: none;
-    position: relative;
-    margin-top: 50px;
     user-select: none;
     cursor: none;
+    transform: rotate(90deg);
+    align-self: center;
   }
 }
 
