@@ -18,6 +18,7 @@
 body {
   cursor: none;
   overflow-x: hidden;
+  height: 100%;
 }
 
 .cursor {
@@ -49,9 +50,11 @@ body {
 }
 
 main {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   scroll-behavior: smooth;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 main section {
   height: 100vh;
@@ -392,7 +395,6 @@ main section {
     overflow: auto;
   }
   main section {
-    height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
 
@@ -537,8 +539,7 @@ main section {
     overflow: auto;
   }
   main section {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    min-height: calc(var(--vh, 1vh) * 100);
   }
 
   .mobile {
@@ -625,7 +626,8 @@ main section {
   }
 
   #call-to-action {
-    overflow: hidden;
+    overflow: auto;
+    background-color: #d03d47;
   }
   #call-to-action h3 {
     font-family: "Amatic SC", cursive;
@@ -634,7 +636,7 @@ main section {
   }
   #call-to-action p {
     font-family: "Oswald", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1rem;
   }
   #call-to-action div {
