@@ -129,10 +129,6 @@ main {
   display: none;
 }
 
-.arrow {
-  text-shadow: 2px 0px 2px rgba(68, 68, 68, 0.6);
-}
-
 #landingside {
   background-color: #d03d47;
   display: grid;
@@ -148,18 +144,29 @@ main {
     font-weight: 700;
     text-align: center;
   }
-
-  a {
-    font-family: $default-header-font;
-    font-size: 4rem;
-    color: #f7555f;
+  #scroll-ned{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  p {
+    font-family: $default-text-font;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #f4f4f4;
     text-align: center;
     text-decoration: none;
     user-select: none;
     cursor: none;
-    transform: rotate(90deg);
-    align-self: center;
   }
+  div{
+    margin-top: 30px;
+    background-color: white;
+    height: 60px;
+    width: 1px;
+  }
+}
 }
 
 .quote {
