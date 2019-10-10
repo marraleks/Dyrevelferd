@@ -97,14 +97,13 @@ function touchPress() {
 let mainNavLinks = document.querySelectorAll("main div#dot-menu div a");
 let mainSection = document.querySelectorAll("main section");
 
-window.addEventListener('scroll', event => {
+window.addEventListener('scroll', (e) => {
   let fromTop = window.scrollY;
 
   mainNavLinks.forEach(link => {
-    console.log(mainNavLinks);
     let section = document.querySelector(link.hash);
     if (
-      section.offsetTop - 500 <= fromTop && section.offsetTop - 500 + section.offsetHeight > fromTop  
+      section.offsetTop - 400 <= fromTop && section.offsetTop - 400 + section.offsetHeight > fromTop  
     ) {
       link.classList.add("current");
     } else {
@@ -112,6 +111,3 @@ window.addEventListener('scroll', event => {
     }
   });
 });
-
-
-console.log(mainSection);
