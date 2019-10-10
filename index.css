@@ -144,7 +144,7 @@ main #dot-menu .menu-hover .bullets.current {
   cursor: none;
 }
 #landingside #scroll-ned svg {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 #landingside #scroll-ned svg line {
   stroke-width: 1;
@@ -157,26 +157,6 @@ main #dot-menu .menu-hover .bullets.current {
   animation-name: line--animation;
 }
 
-@keyframes line--animation {
-  from {
-    stroke-dashoffset: 30;
-    opacity: 0;
-  }
-  30% {
-    stroke-dashoffset: 30;
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    stroke-dashoffset: -30;
-    opacity: 0;
-  }
-}
 .quote {
   color: white;
   font-family: "Amatic SC", cursive;

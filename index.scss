@@ -161,7 +161,7 @@ main {
     cursor: none;
   }
   svg{
-    margin-top: 20px;
+    margin-top: 15px;
     line{ 
       stroke-width: 1;
       stroke: #f4f4f4;
@@ -177,29 +177,27 @@ main {
 }
 
 
-@keyframes line--animation {
-  from{
-    stroke-dashoffset: 30;
-    opacity: 0;
-  }
+// @keyframes line--animation {
+//   from{
+//     stroke-dashoffset: 30;
+//     opacity: 0;
+//   }
 
-  30% {
-    stroke-dashoffset: 30;
-    opacity: 0;
-  }
-  40%{
-    opacity: 1;
-  }
-  90%{
-    opacity: 1;
-  }
-  
-  
-  100% {
-    stroke-dashoffset: -30;
-    opacity: 0;
-  }
-}
+//   30% {
+//     stroke-dashoffset: 30;
+//     opacity: 0;
+//   }
+//   40%{
+//     opacity: 1;
+//   }
+//   90%{
+//     opacity: 1;
+//   }
+//   100% {
+//     stroke-dashoffset: -30;
+//     opacity: 0;
+//   }
+// }
 
 .quote {
   color: white;
