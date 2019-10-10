@@ -160,44 +160,14 @@ main {
     user-select: none;
     cursor: none;
   }
-  svg{
+  div{
     margin-top: 15px;
-    line{ 
-      stroke-width: 1;
-      stroke: #f4f4f4;
-      stroke-dasharray: 30;
-      animation-duration: 4s;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-fill-mode: both;
-      animation-name: line--animation;
-    }
+    height: 30px;
+    width: 1px;
+    background-color: #f4f4f4;
   }
 }
 }
-
-
-// @keyframes line--animation {
-//   from{
-//     stroke-dashoffset: 30;
-//     opacity: 0;
-//   }
-
-//   30% {
-//     stroke-dashoffset: 30;
-//     opacity: 0;
-//   }
-//   40%{
-//     opacity: 1;
-//   }
-//   90%{
-//     opacity: 1;
-//   }
-//   100% {
-//     stroke-dashoffset: -30;
-//     opacity: 0;
-//   }
-// }
 
 .quote {
   color: white;

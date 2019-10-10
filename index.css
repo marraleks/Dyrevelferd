@@ -143,18 +143,11 @@ main #dot-menu .menu-hover .bullets.current {
   user-select: none;
   cursor: none;
 }
-#landingside #scroll-ned svg {
+#landingside #scroll-ned div {
   margin-top: 15px;
-}
-#landingside #scroll-ned svg line {
-  stroke-width: 1;
-  stroke: #f4f4f4;
-  stroke-dasharray: 30;
-  animation-duration: 4s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-fill-mode: both;
-  animation-name: line--animation;
+  height: 30px;
+  width: 1px;
+  background-color: #f4f4f4;
 }
 
 .quote {
