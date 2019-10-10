@@ -94,8 +94,25 @@ function touchPress() {
 //     })
 //   }
 
+
 let mainNavLinks = document.querySelectorAll("main div#dot-menu div a");
 let mainSection = document.querySelectorAll("main section");
+const dot = document.querySelector("#dot-menu");
+
+window.addEventListener('scroll', (e) => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach( () => {
+    if (
+      fromTop > 400 
+    ) {
+      dot.style.display = "inline";
+    } 
+    else {
+      dot.style.display = "none";
+    }
+  });
+});
 
 window.addEventListener('scroll', (e) => {
   let fromTop = window.scrollY;
@@ -106,7 +123,8 @@ window.addEventListener('scroll', (e) => {
       section.offsetTop - 400 <= fromTop && section.offsetTop - 400 + section.offsetHeight > fromTop  
     ) {
       link.classList.add("current");
-    } else {
+    }    
+    else {
       link.classList.remove("current");
     }
   });
