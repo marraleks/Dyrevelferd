@@ -93,3 +93,25 @@ function touchPress() {
 //         e.style.transform = "translateY(-" + current * 100 + "vh)"
 //     })
 //   }
+
+let mainNavLinks = document.querySelectorAll("main div#dot-menu div a");
+let mainSection = document.querySelectorAll("main section");
+
+window.addEventListener('scroll', event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach(link => {
+    console.log(mainNavLinks);
+    let section = document.querySelector(link.hash);
+    if (
+      section.offsetTop - 500 <= fromTop && section.offsetTop - 500 + section.offsetHeight > fromTop  
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+
+console.log(mainSection);
