@@ -208,7 +208,7 @@ main #dot-menu .menu-hover .bullets.current {
   background-color: white;
 }
 #katten .container .nameTag p {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
 }
 #katten .container img {
   position: absolute;
@@ -260,7 +260,7 @@ main #dot-menu .menu-hover .bullets.current {
   background-color: white;
 }
 #hunden .container .nameTag p {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   font-weight: 600;
 }
 #hunden .container img {
@@ -306,7 +306,7 @@ main #dot-menu .menu-hover .bullets.current {
   background-color: white;
 }
 #tvillingene .nameTag-pelle p {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
 }
 #tvillingene .nameTag-petter {
   display: flex;
@@ -324,7 +324,7 @@ main #dot-menu .menu-hover .bullets.current {
   background-color: white;
 }
 #tvillingene .nameTag-petter p {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
 }
 #tvillingene img {
   height: 70%;
