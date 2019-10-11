@@ -546,6 +546,8 @@ main #dot-menu .menu-hover .bullets.current {
 
   #dot-menu {
     display: none;
+    position: absolute;
+    right: -100vw;
   }
 
   main {

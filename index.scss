@@ -590,6 +590,8 @@ main {
 
   #dot-menu {
     display: none;
+    position: absolute;
+    right: -100vw;
   }
   main {
     overflow: auto;
