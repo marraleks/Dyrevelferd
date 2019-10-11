@@ -150,20 +150,21 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
   p {
     font-family: $default-text-font;
     font-weight: 300;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     color: #f4f4f4;
     text-align: center;
     text-decoration: none;
     user-select: none;
     cursor: none;
+    letter-spacing: 5px;
   }
   div{
     margin-top: 15px;
-    height: 30px;
+    height: 15px;
     width: 1px;
     background-color: #f4f4f4;
   }

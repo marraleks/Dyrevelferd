@@ -132,21 +132,22 @@ main #dot-menu .menu-hover .bullets.current {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 #landingside #scroll-ned p {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   color: #f4f4f4;
   text-align: center;
   text-decoration: none;
   user-select: none;
   cursor: none;
+  letter-spacing: 5px;
 }
 #landingside #scroll-ned div {
   margin-top: 15px;
-  height: 30px;
+  height: 15px;
   width: 1px;
   background-color: #f4f4f4;
 }
