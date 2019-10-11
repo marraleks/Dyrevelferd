@@ -204,7 +204,7 @@ main #dot-menu .menu-hover .bullets.current {
 #katten .container .nameTag .nameLine {
   height: 80px;
   width: 1px;
-  margin: 10px;
+  margin: 20px;
   background-color: white;
 }
 #katten .container .nameTag p {
@@ -256,7 +256,7 @@ main #dot-menu .menu-hover .bullets.current {
 #hunden .container .nameTag .nameLine {
   height: 80px;
   width: 1px;
-  margin: 10px;
+  margin: 20px;
   background-color: white;
 }
 #hunden .container .nameTag p {
@@ -302,7 +302,7 @@ main #dot-menu .menu-hover .bullets.current {
 #tvillingene .nameTag-pelle .nameLine {
   height: 80px;
   width: 1px;
-  margin: 10px;
+  margin: 20px;
   background-color: white;
 }
 #tvillingene .nameTag-pelle p {
@@ -320,7 +320,7 @@ main #dot-menu .menu-hover .bullets.current {
 #tvillingene .nameTag-petter .nameLine {
   height: 80px;
   width: 1px;
-  margin: 10px;
+  margin: 20px;
   background-color: white;
 }
 #tvillingene .nameTag-petter p {
