@@ -587,8 +587,8 @@ main #dot-menu .menu-hover .bullets.current {
     font-size: 1.3rem;
   }
   #katten .container img {
-    height: 80vh;
-    width: auto;
+    height: auto;
+    width: 90vw;
   }
   #katten h4 {
     top: 85%;
@@ -604,8 +604,8 @@ main #dot-menu .menu-hover .bullets.current {
     font-size: 1.3rem;
   }
   #hunden .container img {
-    height: 70vh;
-    width: auto;
+    height: auto;
+    width: 100vw;
   }
   #hunden h4 {
     left: 4%;
