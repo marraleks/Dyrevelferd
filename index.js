@@ -1,3 +1,6 @@
+
+
+// Når jeg blir stor typetext
 let i = 0;
 let txt = 'Når jeg blir stor';
 let speed = 100; 
@@ -10,6 +13,7 @@ function typeWriter() {
   }
 }
 
+// Outbound link for Google Analytics
 document.querySelector("#dyrevern").addEventListener('click', (e) => {
   gtag('event', 'click', {
       'event_category': 'outbound',
@@ -21,6 +25,8 @@ document.querySelector("#dyrevern").addEventListener('click', (e) => {
   });
 });
 
+
+// Custom mouse cursor
 const cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e => {
@@ -36,93 +42,38 @@ document.addEventListener('click', () => {
     }, 500)
 })
 
+// Animation on button click
 document.getElementById("dyrevern").addEventListener("click", touchPress);
 
 function touchPress() {
   document.getElementById("dyrevern").style.transform = "translateY(4px)";
   document.getElementById("dyrevern").style.boxShadow = "-1px 4px 1px rgba(68, 68, 68, 0.6)";
 }
-// window.addEventListener('scroll', () => {
-//   window.scrollTo(0,0)
-// })
 
-  // We execute the same script as before
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
+// Vh on mobile
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-//   let currentSlide = 1;
-//   let date = new Date()
-//   before = date.getTime()
-
-//   window.addEventListener('wheel', function (e) {
-
-//       console.log(e.deltaY);
-
-//       //wait 2 secs between doing something because the wheel events happpen multiple times
-//       let date = new Date()
-//       now = date.getTime()
-//       let threshold = Math.abs(e.deltaY)
-
-//       //set higher threshold limit for less reaction
-//       if (now - before < 800 && threshold < 50) {
-//           return //stop function entirely
-//       } else {
-//           before = now
-//       }
-
-//       //normalize horisontal/vertical scroll (otherwise the value can be somewhere between zero and 50+) 
-//       let y = e.deltaY > 0 ? 1 : -1
-
-//       //scroll directions
-//       if( y <= 0 ) {
-//           currentSlide += 1 
-//       }else{
-//           currentSlide -= 1
-//       }
-
-//       console.log(currentSlide)
-//       if(currentSlide >= 0 && currentSlide <= 5){
-//           shiftSlide(currentSlide)
-//       }
-
-//   });
-
-//   let lastSlide = 0;
-//   function shiftSlide(current){
-//     document.querySelectorAll('section').forEach( (e) => {
-//         e.style.transform = "translateY(-" + current * 100 + "vh)"
-//     })
-//   }
-
-
+// Navigation dots
 let mainNavLinks = document.querySelectorAll("main div#dot-menu div a");
-let mainSection = document.querySelectorAll("main section");
-const dot = document.querySelector("#dot-menu");
+const dotNav = document.querySelector("#dot-menu");
 
 
 
-
-window.addEventListener('scroll', (e) => {
-  let fromTop = window.scrollY;
-
-  mainNavLinks.forEach(link => {
-    if (
-      fromTop > 400 
-    ) {
-      dot.style.display = "inline";
-    } else {
-      dot.style.display = "none";
-    }
-    
-   
-  });
-});
-window.addEventListener('scroll', (e) => {
+window.addEventListener('scroll', () => {
   let fromTop = window.scrollY;
 
   mainNavLinks.forEach(link => {
     let section = document.querySelector(link.hash);
-    
+    if (
+      fromTop > 400 
+    ) {
+      dotNav.style.display = "inline";
+    } else if (
+      fromTop < 400
+    ) {
+      dotNav.style.display = "none";
+    }
     if (
       section.offsetTop - 400 <= fromTop && section.offsetTop - 400 + section.offsetHeight > fromTop  
     ) {

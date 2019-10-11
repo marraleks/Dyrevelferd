@@ -202,7 +202,7 @@ main #dot-menu .menu-hover .bullets.current {
   top: 8%;
 }
 #katten .container .nameTag .nameLine {
-  height: 100px;
+  height: 80px;
   width: 1px;
   margin: 10px;
   background-color: white;
@@ -254,7 +254,7 @@ main #dot-menu .menu-hover .bullets.current {
   top: 15%;
 }
 #hunden .container .nameTag .nameLine {
-  height: 100px;
+  height: 80px;
   width: 1px;
   margin: 10px;
   background-color: white;
@@ -300,7 +300,7 @@ main #dot-menu .menu-hover .bullets.current {
   left: 33%;
 }
 #tvillingene .nameTag-pelle .nameLine {
-  height: 100px;
+  height: 80px;
   width: 1px;
   margin: 10px;
   background-color: white;
@@ -318,7 +318,7 @@ main #dot-menu .menu-hover .bullets.current {
   right: 38%;
 }
 #tvillingene .nameTag-petter .nameLine {
-  height: 100px;
+  height: 80px;
   width: 1px;
   margin: 10px;
   background-color: white;
