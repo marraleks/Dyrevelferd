@@ -593,7 +593,7 @@ main {
   #dot-menu {
     display: none;
     position: absolute;
-    right: -100vw;
+    left: -100vw;
   }
   main {
     overflow: auto;
@@ -602,6 +602,7 @@ main {
       min-height: calc(var(--vh, 1vh) * 100);
     }
   }
+  
   .mobile {
     display: flex;
   }
