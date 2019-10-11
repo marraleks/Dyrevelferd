@@ -2,7 +2,7 @@
 
 // Når jeg blir stor typetext
 let i = 0;
-let txt = 'Når jeg blir stor';
+let txt = 'Når jeg blir stor...';
 let speed = 100; 
 
 function typeWriter() {
