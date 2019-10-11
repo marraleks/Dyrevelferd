@@ -139,13 +139,14 @@ main #dot-menu .menu-hover .bullets.current {
   font-weight: 300;
   font-size: 0.6rem;
   color: #f4f4f4;
-  text-align: center;
   text-decoration: none;
   user-select: none;
   cursor: none;
   letter-spacing: 5px;
+  align-self: center;
+  margin-right: -5px;
 }
-#landingside #scroll-ned div {
+#landingside #scroll-ned #scroll-linje {
   margin-top: 15px;
   height: 15px;
   width: 1px;
