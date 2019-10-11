@@ -426,8 +426,13 @@ main {
 }
 
 @media (max-width: 1024px) {
+
+  body {
+    cursor: default;
+  }
+
   .cursor {
-    opacity: 1;
+    display: none;
   }
 
   .mobile {
@@ -549,6 +554,10 @@ main {
       font-family: $default-text-font;
       font-weight: 300;
       font-size: 1.5rem;
+    }
+
+    a {
+      cursor: default;
     }
     
     .desktop {
@@ -706,14 +715,12 @@ main {
       font-weight: 300;
       font-size: 1rem;
     }
-    div {
+    a {
       width: 150px;
       height: 50px;
-      p {
-        font-family: $default-header-font;
-        font-size: 1.6rem;
-        font-weight: 400;
-      }
+      font-family: $default-header-font;
+      font-size: 1.6rem;
+      font-weight: 400;
     }
     .desktop {
       display: none;

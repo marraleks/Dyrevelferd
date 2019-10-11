@@ -20,7 +20,7 @@ document.querySelector("#dyrevern").addEventListener('click', (e) => {
       'event_label': 'dyrevern',
       'transport_type': 'beacon',
       'event_callback': function () {
-          window.location = 'http://www.dyrevern.no/stott_oss';
+          window.location = 'http://www.dyrevern.no/stott_oss?utm_source=Kristiania&utm_medium=google_ads&utm_campaign=naar_jeg_bli_stor';
       }
   });
 });

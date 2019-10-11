@@ -394,8 +394,12 @@ main #dot-menu .menu-hover .bullets.current {
 }
 
 @media (max-width: 1024px) {
+  body {
+    cursor: default;
+  }
+
   .cursor {
-    opacity: 1;
+    display: none;
   }
 
   .mobile {
@@ -512,6 +516,9 @@ main #dot-menu .menu-hover .bullets.current {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-size: 1.5rem;
+  }
+  #call-to-action a {
+    cursor: default;
   }
   #call-to-action .desktop {
     display: none;
@@ -656,11 +663,9 @@ main #dot-menu .menu-hover .bullets.current {
     font-weight: 300;
     font-size: 1rem;
   }
-  #call-to-action div {
+  #call-to-action a {
     width: 150px;
     height: 50px;
-  }
-  #call-to-action div p {
     font-family: "Amatic SC", cursive;
     font-size: 1.6rem;
     font-weight: 400;
